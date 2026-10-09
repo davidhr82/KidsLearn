@@ -1,0 +1,1082 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>הַמִּשְׂחָקִיָּה שֶׁל כִּתָּה א׳ 🌈</title>
+<style>
+:root{--ink:#253353;--purple:#7657db;--blue:#2d9edb;--green:#16a97d;--pink:#ee6eaa;--yellow:#ffcc53}*{box-sizing:border-box}body{margin:0;font-family:Arial,'Noto Sans Hebrew',sans-serif;color:var(--ink);background:radial-gradient(circle at 5% 5%,#ffe3ed,transparent 36%),radial-gradient(circle at 90% 5%,#d9f6ff,transparent 36%),#f4f3ff;min-height:100dvh}.app{max-width:780px;margin:auto;padding:16px 14px 40px}.top{display:flex;align-items:center;justify-content:space-between;gap:10px}.brand{font-size:clamp(22px,5vw,32px);font-weight:900}.pill{border:0;background:white;border-radius:30px;padding:11px 15px;font-weight:bold;box-shadow:0 3px 12px #39415a16;color:var(--ink);cursor:pointer}.pill:focus-visible,.tile:focus-visible,.option:focus-visible,.action:focus-visible{outline:4px solid #222}.hero{text-align:center;padding:18px 8px}.hero h1{font-size:clamp(26px,6vw,40px);margin:8px 0}.hero p{margin:8px 0;color:#586581}.modes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.tile{border:0;min-height:162px;padding:16px 10px;border-radius:27px;box-shadow:0 7px 0 #0000000b,0 10px 28px #2c2a4c12;cursor:pointer;color:var(--ink);transition:transform .15s}.tile:active,.option:active{transform:scale(.96)}.tile .art{display:block;font-size:54px;line-height:1.3}.tile strong{display:block;font-size:23px;margin-top:6px}.tile small{display:block;font-size:14px;margin-top:7px;color:#54607b}.t1{background:#e0f2ff}.t2{background:#fff0d6}.t3{background:#fce6f1}.t4{background:#e2f9ed}.t5{background:#ece6ff}.t6{background:#fff4d6}.game{background:#fff;border-radius:30px;padding:16px;box-shadow:0 15px 45px #3d447018;min-height:540px}.gamebar{display:flex;align-items:center;justify-content:space-between;gap:8px}.meter{height:13px;background:#e9e8f6;border-radius:20px;overflow:hidden;margin:18px 0}.fill{height:100%;background:linear-gradient(90deg,#49cbb2,#9d79ed);width:0;transition:width .3s}.prompt{text-align:center;font-weight:900;font-size:clamp(23px,5vw,34px);margin:14px 0 8px;min-height:35px}.visual{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:165px;margin:6px auto 14px;gap:12px}.big{font-size:clamp(82px,19vw,125px);font-weight:900;line-height:1.4;color:#7356d2;text-shadow:0 5px #e9e0ff}.emoji-big{font-size:clamp(64px,17vw,108px)}.pairs{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:530px}.pair{background:#e0f3ff;border:3px solid #85c8ee;border-radius:18px;padding:5px 8px;display:flex;gap:4px;font-size:30px}.lonely{background:#fff0c8;border:3px dashed #f2ae34;border-radius:18px;padding:5px 9px;font-size:30px}.options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.option{border:3px solid #d6d3ef;border-radius:23px;background:#f7f5ff;min-height:103px;font-weight:900;font-size:clamp(24px,6vw,38px);color:#343657;cursor:pointer;transition:transform .12s,background .12s}.option .sub{display:block;font-size:16px;margin-top:4px}.option.good{background:#c8f5df;border-color:#27bf8b}.option.bad{background:#ffe2e2;border-color:#f08484}.option:disabled{cursor:default}.bottom{min-height:84px;text-align:center;padding-top:14px}.feedback{font-size:23px;font-weight:900;min-height:32px}.action{border:0;border-radius:20px;background:var(--purple);color:white;font-size:22px;font-weight:900;padding:14px 30px;cursor:pointer;margin:10px auto;box-shadow:0 5px 0 #5a42a7}.mini{font-size:15px;color:#68738a}.stars{font-size:32px;letter-spacing:3px}.hidden{display:none!important}.finish{text-align:center;padding:32px 8px}.finish .trophy{font-size:100px;animation:bounce 1.2s infinite alternate}.finish h2{font-size:34px}.confetti{position:fixed;pointer-events:none;z-index:10;font-size:25px;animation:fall 1.8s ease-out forwards}@keyframes fall{to{transform:translateY(90vh) rotate(450deg);opacity:0}}@keyframes bounce{to{transform:translateY(-12px)}}@media(min-width:650px){.modes{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:380px){.tile{min-height:145px}.tile .art{font-size:43px}.tile strong{font-size:19px}.option{min-height:90px}}
+.speechpanel{background:#f1efff;border-radius:22px;padding:12px;margin:12px 0;display:grid;gap:10px}.speechwords{display:flex;justify-content:center;flex-wrap:wrap;gap:5px;min-height:38px;line-height:1.9}.word{font-size:clamp(19px,4.5vw,26px);padding:1px 5px;border-radius:8px;transition:background .1s}.word.active{background:#ffdb68;color:#42215f;box-shadow:0 0 0 3px #ffdf82;font-weight:900}.speechbuttons{display:flex;gap:8px;justify-content:center}.speechbuttons button{border:0;background:white;border-radius:14px;padding:12px 17px;font-size:23px;cursor:pointer;min-width:66px}.speechbuttons button:focus-visible{outline:3px solid #7657db}.dragzone,.dropzone{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:9px;min-height:82px}.chip{border:3px solid #a9a0e7;border-radius:17px;background:#f2edff;color:#43338a;font-size:clamp(28px,7vw,43px);font-weight:900;min-width:62px;min-height:65px;cursor:grab;touch-action:manipulation}.chip.selected{background:#ffe69a;border-color:#f1b62b}.slot{border:3px dashed #a9a0e7;border-radius:17px;min-width:65px;min-height:68px;background:#faf8ff;font-size:35px;display:grid;place-items:center;cursor:pointer}.slot.filled{border-style:solid;background:#d8f6e6}.memorygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;width:100%}.memorycard{border:3px solid #b7acef;background:#8064dc;color:white;border-radius:18px;min-height:88px;font-size:clamp(30px,8vw,48px);cursor:pointer}.memorycard.open{background:#fff1ca;color:#28344e}.memorycard.matched{background:#d4f8e7;color:#166a4e;border-color:#60d2a0}.playnote{font-size:16px;color:#59627b;text-align:center;margin:5px}.modeart{font-size:72px;text-align:center} 
+.lesson{background:#fff;border-radius:30px;padding:20px;box-shadow:0 15px 45px #3d447018;min-height:580px;text-align:center}
+.lesson-art{font-size:clamp(64px,16vw,110px);min-height:145px;display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap}
+.lesson-art .example{background:#e8f4ff;border:3px solid #86c9f2;border-radius:20px;padding:10px 16px}
+.lesson-title{font-size:clamp(27px,6vw,38px);color:#6845ba;margin:12px 0}
+.lesson-text{font-size:clamp(21px,5vw,29px);font-weight:800;line-height:1.8;min-height:85px}
+.lesson-nav{display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:20px}
+.lesson-nav button{border:0;border-radius:18px;padding:15px 19px;background:#e9e4ff;color:#47308c;font-size:19px;font-weight:900;cursor:pointer}
+.lesson-nav .primary{background:#7657db;color:white}
+.dots{font-size:25px;color:#8267cc;letter-spacing:6px}
+.lesson .speechpanel{margin:12px 0}.lesson-art:has(svg){flex-direction:column;gap:8px}.lesson-digital{direction:ltr;unicode-bidi:isolate;background:#17283b;color:#a4ffbb;font:900 clamp(25px,6vw,43px) Arial,sans-serif;border-radius:16px;padding:10px 17px;max-width:100%;text-align:center}.visual svg text{paint-order:stroke;stroke:#fff;stroke-width:1px}
+#narratorText .spoken-word{display:inline-block;margin:0 3px;padding:0 3px;border-radius:7px}#narratorText .spoken-word.active{background:#ffe17a;color:#49276c;box-shadow:0 0 0 2px #ffdb64}
+.profile-box{background:#fff;border:3px solid #b9a7f5;border-radius:25px;padding:18px;margin:14px 0;box-shadow:0 6px 22px #5544aa18}
+.profile-box input{font:inherit;font-size:22px;max-width:230px;width:100%;border:2px solid #b6a4e6;border-radius:13px;padding:10px;text-align:center}
+.profile-box button,.resume-btn{font:inherit;font-weight:900;border:0;border-radius:14px;background:#7253cf;color:white;padding:12px 18px;margin:6px;cursor:pointer}
+.profile-box .resume-btn{background:#138b72}
+.topic-progress{height:9px;border-radius:10px;background:#ddd7f6;overflow:hidden;margin-top:9px}
+.topic-progress>div{height:100%;background:linear-gradient(90deg,#45c4a1,#8b70e8);width:0%}
+.profile-stats{font-size:16px;color:#493a80;margin:9px}
+#profileWelcome{font-weight:900;font-size:23px;color:#6845ba}
+#profileMsg{font-size:14px;color:#555}
+
+.menu-voice{position:absolute;top:8px;left:8px;border:2px solid #7657db!important;background:white!important;color:#4e319f!important;border-radius:50%!important;width:51px;height:51px;padding:0!important;font-size:25px!important;z-index:2;box-shadow:0 3px 10px #2222;cursor:pointer}
+.tile{position:relative;padding-top:53px!important}
+.guide-glow{animation:guidePulse 1s ease-in-out infinite;outline:5px solid #ffd34e!important;outline-offset:3px}
+@keyframes guidePulse{0%,100%{box-shadow:0 0 0 2px #ffd34e88;transform:scale(1)}50%{box-shadow:0 0 0 12px #ffd34e44;transform:scale(1.045)}}
+#guidePointer{position:fixed;z-index:300;pointer-events:none;font-size:49px;filter:drop-shadow(0 4px 4px #5555);animation:pointTap 1s ease-in-out infinite;display:none}
+@keyframes pointTap{0%,100%{transform:translate(-15px,16px) rotate(-16deg)}50%{transform:translate(0,0) rotate(0deg)}}
+.help-voice{font-size:21px;border:0;border-radius:14px;background:#f2ebff;color:#5b389e;padding:8px 12px;cursor:pointer}
+.guide-banner{background:#fff3b6;color:#543e14;padding:12px;border-radius:17px;font-size:19px;font-weight:900;margin:12px 0;text-align:center}
+
+/* Focused, slide-based interface: one visible narration control set. */
+html,body{height:100%;overflow:hidden}body{background:#f4f3ff}
+.app{height:100dvh;max-width:950px;padding:8px 12px;display:flex;flex-direction:column;overflow:hidden}
+.top{flex:0 0 auto;min-height:42px}.brand{font-size:clamp(17px,3vw,23px)}
+#narrator{display:none!important}
+#home,#lesson,#game{flex:1;min-height:0;overflow:hidden}
+#lesson,#game{display:flex;flex-direction:column;padding:10px 15px;border-radius:20px;min-height:0}
+.gamebar{flex:0 0 auto}.meter{flex:0 0 auto;margin:7px 0;height:8px}
+#lessonArt{flex:1 1 auto;min-height:0!important;overflow:hidden;font-size:clamp(40px,9vh,85px);padding:0}
+#lessonArt svg{height:min(100%,32dvh)!important;width:auto!important;max-width:100%}
+.lesson-title{font-size:clamp(20px,3.4vh,29px);margin:4px 0;flex:0 0 auto}
+.lesson-text{font-size:clamp(17px,2.9vh,24px);line-height:1.35;min-height:0;flex:0 1 auto;margin:3px 0}
+.lesson .speechpanel{flex:0 0 auto;margin:5px 0;padding:3px;background:transparent}
+.lesson .speechwords{display:none}
+.speechbuttons{gap:12px}.speechbuttons button{min-width:55px;padding:7px 12px;font-size:22px;border:2px solid #e1d8ff}
+#lessonDots{font-size:16px;line-height:1.1}
+.lesson-nav{flex:0 0 auto;margin-top:5px;gap:6px;flex-wrap:nowrap}
+.lesson-nav button{font-size:clamp(14px,2.7vh,19px);padding:9px 11px;white-space:nowrap}
+#lessonGuide{font-size:14px;margin:3px 0;padding:5px}
+#questionArea{flex:1;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+.prompt{font-size:clamp(19px,3.5vh,29px);margin:4px 0;min-height:0;flex:0 0 auto}
+.game .speechpanel{background:transparent;padding:0;margin:0;gap:2px;flex:0 0 auto}
+.game .speechwords{display:none}
+.visual{flex:1 1 auto;min-height:0;overflow:hidden;margin:3px auto;gap:3px;width:100%}
+.visual svg{height:min(100%,31dvh)!important;width:auto!important;max-width:100%!important}
+.visual .big{font-size:clamp(52px,13vh,95px)}.visual .emoji-big{font-size:clamp(50px,13vh,95px)}
+.options{flex:0 1 auto;gap:7px}.option{min-height:clamp(49px,9vh,77px);font-size:clamp(18px,3.7vh,29px);border-radius:15px}
+.options .help-voice{font-size:18px;padding:4px 8px;min-width:40px}
+.bottom{flex:0 0 auto;min-height:44px;padding-top:3px;display:flex;align-items:center;justify-content:center;gap:8px}
+.feedback{font-size:clamp(16px,2.6vh,22px);min-height:0}.action{font-size:clamp(17px,2.7vh,21px);padding:9px 19px;margin:2px}
+#home{display:flex;flex-direction:column;gap:7px;padding-bottom:3px}
+#home .hero{padding:1px 0;flex:0 0 auto}#home .hero h1{font-size:clamp(20px,3.4vh,28px);margin:0}#home .hero p,#totalStars{display:none}
+#homeGuide{display:none}
+#profileBox{flex:0 0 auto;padding:8px 12px;margin:0;border-width:2px;border-radius:15px}
+#profileWelcome{font-size:clamp(16px,2.6vh,20px)}
+#profileBox label,#profileBox #profileMsg,#profileBox .profile-stats{font-size:13px}
+#profileBox input{font-size:16px;padding:5px;max-width:130px}#profileBox select{font-size:15px!important;padding:5px!important}
+#profileBox button{font-size:14px;padding:6px 10px;margin:2px}
+#profileBox>div:nth-of-type(3){margin:3px 0!important}
+#home .modes{flex:1;min-height:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:9px}
+#home .tile{min-height:0;padding:10px 7px!important;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:18px;overflow:hidden}
+.tile .art{font-size:clamp(28px,5.5vh,45px);line-height:1.1}.tile strong{font-size:clamp(16px,2.7vh,21px);margin-top:3px}.tile small{font-size:12px;margin-top:2px}
+.tile .topic-progress{width:85%;margin-top:4px;height:5px}
+.tile .menu-voice{top:4px;left:5px;width:37px;height:37px;font-size:20px}
+#home>.mini{display:none}
+#topicPager{flex:0 0 auto;display:flex;align-items:center;justify-content:center;gap:16px;min-height:43px}
+#topicPager button{border:0;border-radius:15px;background:#7353cc;color:white;font-size:20px;font-weight:900;padding:7px 20px;cursor:pointer}
+#topicPager button:disabled{opacity:.35}#pageIndicator{font-weight:900;color:#533c94;font-size:17px}
+@media(max-height:650px){#profileBox>div:nth-of-type(3),#profileStats,#profileMsg{display:none}#lessonArt svg{height:min(100%,27dvh)!important}.visual svg{height:min(100%,26dvh)!important}.lesson-text{font-size:16px}.tile small{display:none}}
+@media(max-width:420px){.lesson-nav button{padding:8px 6px;font-size:13px}#lessonHelp{font-size:15px}.top .pill{padding:7px;font-size:12px}.tile strong{font-size:16px}}
+
+/* Full-screen children-first experience */
+html,body{height:100%;overflow:hidden}
+body{background:linear-gradient(160deg,#f3f0ff,#eaf8ff)}
+.app{max-width:none;width:100%;height:100dvh;margin:0;padding:clamp(7px,1.5vh,14px) clamp(9px,2vw,24px);display:flex;flex-direction:column;overflow:hidden}
+.top{display:flex;align-items:center;justify-content:space-between;min-height:42px;gap:10px}
+.header-actions{display:flex;align-items:center;gap:8px}
+.adult-icon{font-size:23px;width:42px;height:42px;border-radius:50%;border:1px solid #d7d0e8;background:#fff;color:#524584;cursor:pointer}
+#home{flex:1;min-height:0;display:flex;flex-direction:column;gap:clamp(5px,1vh,12px);overflow:hidden}
+#home .hero{flex:0 0 auto;margin:0;padding:0}
+#home .hero h1{font-size:clamp(22px,4vh,36px)}
+#home .modes{flex:1;min-height:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:clamp(6px,1.1vw,16px)}
+#home .tile{display:flex!important;min-width:0;min-height:0;padding:clamp(8px,1.5vh,18px) 6px!important;justify-content:center;align-items:center;gap:3px;border-radius:20px;overflow:hidden}
+#home .tile .art{font-size:clamp(25px,6vh,68px);line-height:1.1}
+#home .tile strong{font-size:clamp(14px,2.6vh,23px);line-height:1.15;text-align:center}
+#home .tile small{font-size:clamp(11px,1.8vh,15px);line-height:1.15;text-align:center}
+#home .tile .menu-voice{width:clamp(30px,5vh,43px);height:clamp(30px,5vh,43px);font-size:clamp(17px,3vh,23px)}
+#home .tile .topic-progress{height:5px;margin:2px 0 0}
+#topicPager{display:none!important}
+#profileBox{display:none;position:fixed;inset:0;z-index:900;background:rgba(32,25,62,.58);border:0;border-radius:0;box-shadow:none;margin:0;padding:clamp(16px,4vh,36px) max(16px,calc((100vw - 600px)/2));overflow-y:auto;overscroll-behavior:contain;align-content:start}
+#profileBox.adult-open{display:block}
+#profileBox:before{content:'';position:fixed;inset:12px max(8px,calc((100vw - 630px)/2));background:white;border-radius:24px;z-index:-1;box-shadow:0 20px 80px #0005;pointer-events:none}
+#profileBox>*{position:relative}
+.adult-panel-header{display:flex;align-items:center;justify-content:space-between;font-size:23px;color:#49388a;margin:0 0 18px}
+.adult-panel-header button{border:0;background:#f1edff;color:#473a88;font-size:24px;border-radius:12px;padding:6px 14px;cursor:pointer}
+#profileBox input{max-width:240px;font-size:20px;padding:9px}
+#profileBox label,#profileBox #profileMsg,#profileBox .profile-stats{font-size:16px}
+#profileBox button{font-size:16px;padding:10px 15px;margin:5px}
+#profileWelcome{font-size:22px}
+#homeGuide{display:none!important}
+#lesson,#game{width:100%;max-width:100%;flex:1;min-height:0;overflow:hidden}
+@media(max-width:760px){#home .modes{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(5,minmax(0,1fr));gap:6px}#home .tile{flex-direction:row!important;justify-content:flex-start;gap:clamp(8px,3vw,15px);padding:4px 8px!important;padding-left:42px!important;border-radius:15px}#home .tile .art{font-size:clamp(23px,5vh,40px);min-width:45px;text-align:center}#home .tile strong{font-size:clamp(13px,2.25vh,19px);text-align:right}#home .tile small{display:none}#home .tile .topic-progress{position:absolute;bottom:3px;right:12px;width:55%;height:3px}#home .tile .menu-voice{top:50%;transform:translateY(-50%);left:5px;width:32px;height:32px;font-size:18px}#home .hero h1{font-size:clamp(20px,3.6vh,28px)}}
+@media(max-height:620px){#home .hero{display:none}#home .tile .art{font-size:clamp(22px,4vh,35px)}#home .tile strong{font-size:clamp(12px,2.3vh,17px)}}
+
+/* Critical: state visibility must override all ID-based layout declarations. */
+.hidden,[hidden]{display:none!important}
+#home.hidden,#lesson.hidden,#game.hidden,#questionArea.hidden,#finish.hidden{display:none!important}
+/* Parent panel is an accessible solid dialog, independent of the home screen. */
+#profileBox{background:#fff!important;border:3px solid #d9d0f7!important;border-radius:22px!important;
+ position:fixed!important;inset:clamp(12px,4vh,40px) max(10px,calc((100vw - 650px)/2))!important;
+ padding:clamp(18px,3vw,30px)!important;z-index:1000!important;overflow-y:auto!important;
+ box-shadow:0 0 0 100vmax #21183c99,0 16px 55px #21183c55!important}
+#profileBox:not(.adult-open){display:none!important}
+#profileBox.adult-open{display:block!important}
+#profileBox:before{display:none!important}
+/* Exactly one narration control per activity. */
+#repeat,#lessonHelp,#lessonRestart,#restartSpeech{display:none!important}
+.speechbuttons{justify-content:center;align-items:center;min-height:49px}
+.speechbuttons button{min-width:70px;min-height:47px;cursor:pointer}
+/* Stable action area: showing Next never changes question layout. */
+#questionArea{position:relative;padding-bottom:clamp(75px,12vh,102px)!important}
+#questionArea>.bottom{position:absolute;bottom:0;left:0;right:0;height:clamp(75px,12vh,102px);
+ display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;
+ background:linear-gradient(0deg,#fff 82%,#ffffffdd);z-index:3}
+#questionArea>.bottom #next.hidden{visibility:hidden!important;display:block!important;pointer-events:none}
+#questionArea>.bottom #next{margin:0;min-height:41px}
+#questionArea>.bottom .feedback{min-height:24px;line-height:1.15;text-align:center}
+#lesson .lesson-nav{margin-top:auto;flex-shrink:0}
+@media(max-height:670px){#questionArea{padding-bottom:70px!important}#questionArea>.bottom{height:70px}}
+
+#lessonArt .lesson-clock{width:min(53vw,230px)!important;max-height:min(33dvh,230px)!important}
+#lessonArt .lesson-digital{font-size:clamp(24px,5vw,38px);padding:5px 16px;margin:3px auto}
+.calendar-lesson-art{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:7px;font-size:clamp(25px,5vw,45px);max-width:720px;margin:auto}
+.calendar-lesson-art span,.calendar-day{display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;border-radius:12px;background:#eee7ff;color:#3b287a;font-size:clamp(14px,2.5vw,19px);font-weight:800}
+.calendar-visual{display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:center;max-width:620px;font-size:clamp(22px,4vw,32px);font-weight:800;line-height:1.6;text-align:center}
+.calendar-visual svg{max-height:220px!important}
+.clock-animate{border:0;background:#6943c1;color:white;border-radius:15px;padding:10px 20px;font:inherit;font-weight:800;cursor:pointer}
+#lessonDots{font-size:10px;line-height:1;max-width:100%;overflow:hidden;white-space:nowrap}
+
+/* RTL-first home redesign: balanced illustrated cards without cropping or progress stripes. */
+html,body,.app{direction:rtl;text-align:right}
+#home .modes{direction:rtl;grid-auto-flow:row;align-content:stretch}
+#home .tile{
+ position:relative!important;display:flex!important;flex-direction:column!important;
+ justify-content:center!important;align-items:center!important;
+ gap:clamp(2px,.65vh,8px)!important;min-width:0!important;min-height:0!important;
+ padding:clamp(5px,1vh,13px) clamp(6px,1.2vw,14px)!important;
+ border:1px solid #ffffffcc!important;border-radius:clamp(13px,2vw,22px)!important;
+ box-shadow:0 3px 12px #32326516!important;
+ text-align:center!important;overflow:visible!important;isolation:isolate;
+}
+#home .tile .art{
+ display:flex!important;justify-content:center;align-items:center;
+ width:100%;min-width:0!important;max-width:100%;flex:0 1 auto;
+ font-size:clamp(25px,4.6vh,54px)!important;
+ line-height:1.3!important;white-space:nowrap;
+ text-align:center!important;overflow:visible!important;
+ margin:0!important;padding:0 3px!important;
+}
+#home .tile strong{
+ display:block!important;width:100%;min-width:0;
+ font-size:clamp(13px,2.1vh,22px)!important;
+ line-height:1.3!important;text-align:center!important;
+ margin:0!important;overflow-wrap:normal;
+}
+#home .tile small{display:none!important}
+#home .tile .topic-progress{display:none!important}
+#home .tile .menu-voice{
+ position:absolute!important;inset-inline-start:auto!important;inset-inline-end:5px!important;
+ top:5px!important;left:5px!important;right:auto!important;
+ transform:none!important;width:clamp(29px,4.4vh,39px)!important;
+ height:clamp(29px,4.4vh,39px)!important;font-size:clamp(16px,2.6vh,21px)!important;
+ border:1px solid #cfc1f5!important;box-shadow:0 2px 6px #39296b20!important;
+ z-index:3!important;
+}
+#home .tile:focus-visible{outline:3px solid #5e40c0;outline-offset:2px}
+#home .tile:active{transform:scale(.98)}
+#home .modes{grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:clamp(6px,1.2vw,13px)}
+@media(max-width:760px){
+ #home .modes{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(6,minmax(0,1fr))!important;gap:clamp(4px,.8vh,8px)!important}
+ #home .tile{padding:3px 7px!important}
+ #home .tile .art{font-size:clamp(23px,4.3vh,38px)!important}
+ #home .tile strong{font-size:clamp(12px,1.9vh,17px)!important}
+}
+@media(min-width:1100px){#home .modes{grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr))}}
+@media(max-height:600px){
+ #home .hero{display:none!important}
+ #home .tile .art{font-size:clamp(20px,3.6vh,31px)!important}
+ #home .tile strong{font-size:clamp(11px,2vh,15px)!important}
+ #home .tile .menu-voice{width:26px!important;height:26px!important;font-size:15px!important;top:2px!important;left:2px!important}
+}
+/* Hebrew navigation order and legible numerals. */
+.top,.header-actions,.gamebar,.lesson-nav{direction:rtl}
+#lessonPrev,#lessonNext{direction:rtl}
+#lessonPrev{order:2}#lessonNext{order:1}
+#lessonArt,#visual,.lesson-text,.prompt,.speechwords{direction:rtl}
+.lesson-digital,.digital-clock,[data-time]{direction:ltr;unicode-bidi:isolate}
+
+
+/* Experience redesign: large visual focal point, deliberate motion, RTL navigation. */
+:root{--ui-shadow:0 12px 30px rgba(57,50,117,.13)}
+#lesson,#game{background:linear-gradient(165deg,#fff 0%,#f8f7ff 100%);box-shadow:var(--ui-shadow);border:1px solid #eeeaff}
+#lessonArt{display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:0;overflow:hidden!important}
+#lessonArt .lesson-clock{width:min(52vw,230px)!important;max-height:min(31dvh,230px)!important}
+.lesson-title{color:#3f3486;font-weight:900}
+.lesson-text{max-width:690px;align-self:center;text-align:center;font-weight:700;color:#44516d}
+.lesson-nav{direction:rtl;display:grid!important;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px!important}
+#lessonNext{grid-column:1;grid-row:1;order:unset!important;background:linear-gradient(120deg,#6853d9,#8867ec);color:white;box-shadow:0 6px 0 #4d3ca8;min-height:48px}
+#lessonHelp{grid-column:2;grid-row:1;order:unset!important}
+#lessonPrev{grid-column:3;grid-row:1;order:unset!important;min-height:48px}
+#lessonNext:active,#lessonPrev:active{transform:translateY(3px);box-shadow:none}
+#lesson .speechbuttons{justify-content:center}
+#lesson .speechbuttons button{min-width:47px;min-height:43px;border-radius:15px}
+.scene{position:relative;isolation:isolate;width:min(100%,690px);height:100%;max-height:100%;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(5px,1.4vh,13px);overflow:hidden}
+.scene *{box-sizing:border-box}
+.scene-label{font-size:clamp(14px,2.5vh,21px);font-weight:850;color:#42378a;text-align:center}
+.scene .tap-hint{font-size:clamp(12px,1.8vh,15px);color:#6b6594;text-align:center}
+.scene .week-strip{width:100%;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:clamp(3px,.7vw,9px);direction:rtl;align-items:stretch}
+.scene .day-card{border:2px solid #e2dcff;background:#fff;border-radius:clamp(10px,1.7vw,18px);padding:clamp(4px,1.4vh,11px) 1px;display:flex;flex-direction:column;align-items:center;gap:5px;box-shadow:0 5px 12px #483f8912;min-width:0;cursor:pointer;transition:transform .24s,background .24s,border-color .24s}
+.scene .day-card:focus-visible{outline:3px solid #5832bb}
+.scene .day-card .day-emoji{font-size:clamp(20px,5vh,48px);line-height:1.1;filter:drop-shadow(0 3px 2px #0001)}
+.scene .day-card .day-name{font-size:clamp(10px,2vh,17px);font-weight:850;white-space:nowrap}
+.scene .day-card.active{background:#fff3c7;border-color:#f5bf43;transform:translateY(-5px) scale(1.03);box-shadow:0 9px 18px #dfad4533}
+.scene .day-card:hover{transform:translateY(-3px)}
+.scene .hero-number{font-size:clamp(48px,14vh,110px);line-height:1;font-weight:950;color:#5d4ac7;animation:scenePop .55s both}
+.scene .orbital{position:relative;width:min(65vw,360px);height:min(29dvh,260px);border-radius:999px;background:linear-gradient(155deg,#87d6ff,#d6f1ff 55%,#fff2d1);overflow:hidden;border:5px solid #fff;box-shadow:0 12px 25px #6b91b640;transition:background 1s}
+.scene .orbital.night{background:linear-gradient(145deg,#101b53,#353d82 65%,#7771b2)}
+.scene .sun{position:absolute;left:14%;top:11%;font-size:clamp(68px,15vh,128px);line-height:1;filter:drop-shadow(0 0 18px #ffe56a);animation:sunFloat 3s ease-in-out infinite;transition:transform 1s,opacity 1s}
+.scene .moon{position:absolute;right:15%;top:13%;font-size:clamp(64px,13vh,112px);opacity:0;transform:translateY(90px);transition:transform 1s,opacity 1s}
+.scene .orbital.night .sun{opacity:0;transform:translateY(110px)}
+.scene .orbital.night .moon{opacity:1;transform:translateY(0)}
+.scene .land{position:absolute;bottom:-12%;left:-8%;width:116%;height:37%;border-radius:50% 50% 0 0;background:linear-gradient(#61cba2,#1b9d7b)}
+.scene .orbital.night .land{background:linear-gradient(#2c7d78,#18566b)}
+.scene .scene-btn{font:inherit;font-weight:900;font-size:clamp(14px,2.4vh,19px);border:0;border-radius:16px;padding:10px 22px;color:#fff;background:#6750ce;box-shadow:0 5px 0 #45349c;cursor:pointer;transition:transform .2s}
+.scene .scene-btn:active{transform:translateY(4px);box-shadow:none}
+.scene .stat-row{display:flex;align-items:center;justify-content:center;gap:clamp(8px,3vw,30px);flex-wrap:wrap}
+.scene .stat-bubble{display:flex;flex-direction:column;align-items:center;background:#fff;border:2px solid #e4dcff;border-radius:23px;padding:clamp(8px,1.8vh,18px) clamp(16px,4vw,32px);box-shadow:0 9px 19px #45368b12}
+.scene .stat-bubble b{font-size:clamp(30px,8vh,72px);line-height:1;color:#5842b5}
+.scene .stat-bubble span{font-size:clamp(13px,2.5vh,20px);font-weight:850}
+.scene .months-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(4px,1.3vh,10px);width:min(100%,550px)}
+.scene .month-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;background:#fff;border:2px solid #eee5ff;border-radius:13px;padding:clamp(4px,1vh,10px) 1px;box-shadow:0 4px 9px #6d60a018;animation:scenePop .5s both}
+.scene .month-card span{font-size:clamp(18px,3.6vh,32px)}
+.scene .month-card b{font-size:clamp(11px,1.9vh,16px)}
+.scene .seasons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;width:min(100%,590px)}
+.scene .season{border-radius:18px;padding:clamp(8px,2vh,20px) 2px;background:#fff;border:2px solid #e7dfff;display:flex;flex-direction:column;align-items:center;gap:8px;animation:scenePop .6s both}
+.scene .season span{font-size:clamp(34px,9vh,76px)}
+.scene .season b{font-size:clamp(12px,2.4vh,20px)}
+.scene .general-picture{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:clamp(6px,2vw,18px);font-size:clamp(50px,13vh,105px);line-height:1.2;filter:drop-shadow(0 6px 4px #5c448122);animation:scenePop .55s both}
+.scene .general-picture .unit{animation:gentleBob 2.8s ease-in-out infinite;animation-delay:calc(var(--i)*.17s)}
+.scene .minute-track{display:flex;gap:5px;flex-wrap:wrap;justify-content:center;max-width:480px}
+.scene .minute-track i{width:clamp(6px,1.8vw,12px);height:clamp(13px,3vh,22px);border-radius:4px;background:#7b6bdb;animation:scenePop .3s both;animation-delay:calc(var(--i)*.015s)}
+@keyframes scenePop{from{opacity:0;transform:translateY(12px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes gentleBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes sunFloat{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-9px) rotate(5deg)}}
+@media(max-width:500px){.scene .week-strip{gap:3px}.scene .day-card .day-name{font-size:10px}.scene .day-card{padding:6px 1px}.scene .day-card .day-emoji{font-size:clamp(18px,4.5vh,33px)}.scene .months-grid{gap:4px}.scene .month-card{padding:5px 1px}.scene .month-card b{font-size:11px}.lesson-nav button{font-size:clamp(12px,2vh,16px)!important;padding:9px 5px!important}}
+@media(max-height:650px){.scene .day-card .day-emoji{font-size:clamp(18px,4vh,30px)}.scene .day-card{padding:3px 1px}.scene .orbital{height:min(25dvh,180px)}.scene .sun,.scene .moon{font-size:65px}.scene .month-card span{font-size:19px}.scene .month-card b{font-size:11px}.scene .month-card{padding:3px}}
+@media(prefers-reduced-motion:reduce){.scene *{animation:none!important;transition:none!important}}
+
+.parent-analytics{direction:rtl;text-align:right;margin:18px 0 4px;padding:14px;border-radius:20px;background:#f7f8ff;color:#29324a;font-family:Arial,sans-serif}
+.parent-analytics h2{font-size:23px;margin:0}.parent-analytics h3{font-size:17px;margin:20px 0 9px}
+.analytics-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.analytics-live-label{font-size:12px;color:#53617b;background:white;padding:7px 10px;border-radius:20px}
+.analytics-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:13px 0}
+.analytics-kpi{padding:12px;background:#fff;border:1px solid #e1e5f5;border-radius:15px;min-width:0}
+.analytics-kpi strong{display:block;font-size:25px;color:#493bb3}.analytics-kpi span{font-size:12px;color:#647089}
+.analytics-controls{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.analytics-controls label{font-size:13px;color:#53617b;display:flex;align-items:center;gap:6px}
+.analytics-controls select{font-size:14px!important;padding:7px!important;border:1px solid #cfd6ec;border-radius:9px;background:#fff}
+.analytics-topic,.analytics-entry{padding:11px 12px;margin:7px 0;background:#fff;border:1px solid #e2e6f5;border-radius:13px}
+.analytics-topic-head{display:flex;justify-content:space-between;gap:8px;font-size:14px;font-weight:bold}
+.analytics-track{height:8px;background:#edf0fa;border-radius:9px;overflow:hidden;margin-top:8px}
+.analytics-track>div{height:100%;background:#54bca0;border-radius:9px}
+.analytics-entry{font-size:13px;line-height:1.6;overflow-wrap:anywhere}
+.analytics-entry strong{color:#30395d}.analytics-muted{color:#67748b;font-size:12px}
+.analytics-empty{font-size:13px;color:#66738d;padding:12px;background:white;border-radius:12px}
+.analytics-note{font-size:12px;color:#68758c;line-height:1.5;margin-top:18px}
+
+/* Accessible, compact audio affordances; the answer retains the full grid width. */
+.options .answer-card{position:relative;min-width:0;display:flex;align-items:stretch}
+.options .answer-card>.option{width:100%;min-width:0;padding:15px 30px 12px 13px;line-height:1.25;overflow-wrap:break-word;white-space:normal}
+.options .answer-audio{position:absolute;inset-inline-end:5px;top:5px;z-index:2;width:29px;height:29px;border:1px solid #dcd8f2;border-radius:10px;background:#ffffffdd;font-size:15px;display:grid;place-items:center;padding:0;box-shadow:0 1px 4px #322a6520;cursor:pointer}
+.options .answer-audio:focus-visible{outline:3px solid #6952ce;outline-offset:1px}
+.speechbuttons{min-height:35px!important;gap:5px!important}
+.speechbuttons button,#lesson .speechbuttons button{min-width:34px!important;min-height:32px!important;width:36px;height:34px;padding:3px!important;border-radius:10px!important;font-size:16px!important;border:1px solid #e6e2f6!important;box-shadow:none!important}
+#lessonHelp,.gamebar #repeat{font-size:13px!important;padding:7px 9px!important;min-width:0!important;box-shadow:none!important}
+/* Never animate individual Hebrew glyphs: combining niqqud must remain attached. */
+.scene .general-picture .unit{animation:none!important;display:inline-block;unicode-bidi:isolate}
+.scene .general-picture{animation:scenePop .45s both}
+.scene .general-picture .unit:not(:has(+ .unit)){transform:none}
+.parity-scene .parity-board{display:flex;direction:rtl;align-items:center;justify-content:center;gap:clamp(9px,3vw,25px);min-height:clamp(115px,23vh,200px);width:100%;}
+.parity-scene .parity-item{font-size:clamp(55px,12vh,104px);line-height:1.3;position:relative;filter:drop-shadow(0 6px 5px #302a3322);opacity:1}
+.parity-scene .parity-board.animate .parity-item{animation:parityEnter .65s cubic-bezier(.2,1.3,.4,1) both;animation-delay:calc(var(--i)*.25s)}
+.parity-scene .parity-board.animate .parity-item.unmatched{animation:parityLonely 1.3s ease-in-out both;animation-delay:1.2s}
+.parity-scene .parity-item.unmatched:after{content:'?';position:absolute;top:-12px;right:-10px;background:#ffde6e;color:#6445a2;border-radius:50%;font-size:25px;width:35px;height:35px;display:grid;place-items:center;opacity:0}
+.parity-scene .parity-board.animate .parity-item.unmatched:after{animation:lonelyBadge .5s ease-out 2s forwards}
+.parity-scene .parity-caption{font-weight:900;text-align:center;font-size:clamp(16px,3vh,24px);color:#473b8c}
+.parity-scene .parity-replay{font-size:14px;padding:8px 15px}
+@keyframes parityEnter{from{opacity:0;transform:translateY(45px) scale(.65)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes parityLonely{0%{opacity:1;transform:translateY(0)}45%{transform:translateY(-26px) rotate(-9deg)}75%{transform:translateY(-18px) rotate(8deg)}100%{transform:translateY(-20px) scale(1.08)}}
+@keyframes lonelyBadge{to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.parity-scene *{animation:none!important;opacity:1!important}}
+
+/* Responsive RTL learning experience */
+html{direction:rtl}body{overflow-x:hidden}.app{width:min(100%,1100px);padding:clamp(8px,2vw,20px);padding-bottom:env(safe-area-inset-bottom)}
+#lesson,#game{min-width:0;overflow:hidden}.lesson-art,.visual{max-width:100%;min-width:0;overflow:hidden}.lesson-art svg,.visual svg{max-width:min(100%,260px)!important;max-height:min(31dvh,260px)!important;height:auto!important}.lesson-art .scene{max-width:100%}
+.lesson-title,.lesson-text,.prompt{overflow-wrap:break-word;line-height:1.38}.lesson-text{font-size:clamp(16px,2.5vw,22px)}
+.options{grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(6px,1.5vw,12px);align-items:stretch}.options .answer-card{min-width:0}.options .answer-card>.option{font-size:clamp(17px,3.3vw,27px)!important;min-height:clamp(72px,12dvh,104px);padding:14px 10px 23px!important;line-height:1.35;overflow-wrap:anywhere;word-break:normal;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-align:center}.option .sub{font-size:clamp(12px,2.4vw,17px)!important;line-height:1.25}.options .answer-audio{width:25px;height:25px;top:auto;bottom:4px;inset-inline-end:5px;font-size:12px;opacity:.78;border-radius:8px}
+.option .answer-illustration{display:block;font-size:clamp(23px,5vw,37px);line-height:1.1}.options .answer-card:has(.answer-illustration) .option{padding-top:8px!important}
+.lesson-nav{direction:rtl!important;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)!important}.lesson-nav #lessonNext{grid-column:1;grid-row:1}.lesson-nav #lessonHelp{grid-column:2;grid-row:1}.lesson-nav #lessonPrev{grid-column:3;grid-row:1}.lesson-nav button{min-width:0!important;font-size:clamp(13px,2.4vw,18px)!important}
+.speechbuttons button,.help-voice,#repeat{font-size:clamp(13px,2.6vw,18px)!important;padding:6px 9px!important}.speechpanel{max-width:100%}
+.vowel-glyph{font-family:Arial,'Noto Sans Hebrew',sans-serif!important;line-height:1.9!important;white-space:nowrap!important;display:inline-block;transform:none!important;animation:none!important;font-size:clamp(46px,10vw,80px)!important;padding:8px 12px}
+#lessonArt .vowel-glyph{font-size:clamp(76px,16vw,116px)!important}.big:has(.vowel-glyph){line-height:2!important}
+#difficultyCheck{display:none;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap;margin:6px auto 2px;padding:8px;border-radius:15px;background:#f3efff}#difficultyCheck.visible{display:flex}#difficultyCheck strong{width:100%;font-size:clamp(14px,2.6vw,18px)}#difficultyCheck button{border:2px solid #d6cafa;border-radius:13px;background:#fff;padding:7px 10px;font-size:clamp(13px,2.6vw,17px);font-weight:800;cursor:pointer}#difficultyCheck button.selected{background:#d8f5e8;border-color:#28b889}
+#parentLockControls{background:#f7f5ff;border:1px solid #ded6f5;border-radius:16px;padding:14px;margin:14px 0}#parentLockControls .lock-row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:5px;border-bottom:1px solid #eee}#parentLockControls button{border:1px solid #c5b9ec;background:#fff;border-radius:9px;padding:7px;font-weight:700}#parentLockControls input{max-width:140px;padding:7px;border-radius:8px;border:1px solid #ccc}
+.tile{position:relative}.tile.locked-topic{filter:saturate(.7)}.tile .lock-badge{position:absolute;top:7px;inset-inline-start:7px;font-size:18px;background:#ffffffdd;border-radius:30px;padding:4px}
+.scene .general-picture:has(.unit:only-child) .unit{font-size:clamp(42px,10vw,84px);line-height:1.25;overflow-wrap:anywhere;max-width:100%}.speech-active{filter:drop-shadow(0 0 10px #ffc341)!important;transform:scale(1.12)!important;transition:transform .2s,filter .2s}.lesson-art .sequence-scene{display:flex;justify-content:center;align-items:center;gap:clamp(7px,3vw,25px);width:100%;min-height:100px}.sequence-scene .sequence-item{font-size:clamp(43px,10vw,85px);border-radius:20px;background:#e8f4ff;padding:5px 14px;animation:step-glow 2.4s ease-in-out infinite;animation-delay:calc(var(--step)*.7s);font-variant-numeric:tabular-nums}@keyframes step-glow{0%,80%,100%{transform:scale(1);background:#e8f4ff}18%,40%{transform:scale(1.14);background:#ffe3a5;box-shadow:0 6px 25px #f4b93e66}}
+.lesson-art .vowel-demo{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center}.lesson-art .vowel-demo span{font-size:clamp(50px,12vw,95px);line-height:1.9;background:#eef3ff;border-radius:16px;padding:4px 12px;animation:step-glow 2.4s infinite;animation-delay:calc(var(--step)*.7s)}
+@media(max-width:390px){.options .answer-card>.option{font-size:16px!important;min-height:74px}.lesson-art{min-height:100px!important}.visual{min-height:90px!important}.gamebar strong{font-size:14px}.lesson-nav button{font-size:12px!important;padding:8px 4px!important}}@media(min-width:750px){.app{max-width:1050px}.modes{grid-template-columns:repeat(4,minmax(0,1fr))}.lesson-art svg,.visual svg{max-width:320px!important}}
+@media(prefers-reduced-motion:reduce){.sequence-item,.vowel-demo span{animation:none!important}}
+</style>
+<style>
+.learning-path{position:fixed;inset:0;z-index:9999;background:#16213bba;display:flex;align-items:center;justify-content:center;padding:16px;direction:rtl}.learning-path[hidden]{display:none!important}.path-panel{width:min(520px,100%);max-height:90dvh;overflow:auto;background:#fff;border-radius:26px;padding:clamp(18px,4vw,28px);box-shadow:0 24px 80px #1115}.path-panel h2{margin:0 0 6px;font-size:clamp(23px,5vw,31px)}.path-panel p{font-size:15px;color:#5b6174}.path-cards{display:grid;gap:10px;margin-top:16px}.path-choice{border:2px solid #e5e5f3;background:#f8f9ff;border-radius:17px;padding:13px;text-align:right;display:grid;gap:4px;font:inherit;cursor:pointer;min-height:72px}.path-choice strong{font-size:19px}.path-choice small{font-size:13px;color:#536077}.path-choice:focus-visible{outline:3px solid #7857d9}.path-close{border:0;background:#f0f1f6;border-radius:12px;padding:8px 15px;font:inherit;cursor:pointer}.clock-stage{display:inline-block;border-radius:20px;background:#ede8ff;color:#5435a0;padding:4px 13px;font-weight:800;font-size:13px;margin:3px auto}.clock-scene-actions{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}.clock-scene-actions button{font:inherit;font-size:14px;font-weight:800;border:1px solid #d4caed;background:#fff;color:#4b328c;border-radius:13px;padding:8px 12px}.clock-explain{font-size:13px;color:#4b5070;text-align:center;max-width:320px}.lesson-art:has(.clock-scene-actions){gap:4px!important}@media(max-height:700px){.clock-scene-actions button{padding:5px 9px}.clock-explain{display:none}}
+</style><style>
+/* Spacious, scrollable RTL topic library: no compressed viewport grid. */
+html,body{overscroll-behavior-y:none}
+#home{overflow-y:auto!important;overflow-x:hidden!important;overscroll-behavior:contain;scrollbar-gutter:stable;gap:18px!important;padding:12px clamp(8px,2vw,22px) 32px!important;align-content:start!important}
+#home .hero{flex:none!important;text-align:center;padding:12px 4px 4px!important}
+#home .hero h1{font-size:clamp(26px,5vw,38px)!important;margin:0 0 8px}
+#home .hero p{font-size:clamp(14px,2.6vw,18px)!important;margin:0}
+#home .modes{flex:none!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:none!important;grid-auto-rows:auto!important;gap:clamp(12px,2.4vw,22px)!important;align-content:start!important;direction:rtl!important;padding:5px 3px 20px!important;overflow:visible!important}
+#home .tile{box-sizing:border-box!important;min-height:clamp(156px,23vw,190px)!important;height:auto!important;padding:24px 14px 18px!important;gap:12px!important;border-radius:23px!important;box-shadow:0 7px 22px #3b34651b!important;border:1px solid #e8e3f6!important;background:linear-gradient(155deg,#fff,#f9f7ff)!important;transition:transform .2s ease,box-shadow .2s ease!important;overflow:hidden!important}
+#home .tile:active{transform:scale(.975)!important}
+#home .tile:focus-visible{outline:3px solid #7053cf!important;outline-offset:3px}
+#home .tile .art{font-size:clamp(34px,7vw,59px)!important;line-height:1.45!important;min-height:62px!important;max-height:none!important;white-space:normal!important;overflow:visible!important;word-break:keep-all!important;letter-spacing:0!important;flex:0 0 auto!important}
+#home .tile strong{font-size:clamp(17px,2.6vw,22px)!important;line-height:1.45!important;overflow-wrap:break-word!important;text-wrap:balance!important;padding:0 4px!important}
+#home .tile small{display:block!important;font-size:clamp(12px,1.7vw,14px)!important;color:#68617e!important;line-height:1.35!important;text-align:center!important;max-width:95%!important}
+#home .tile .menu-voice{width:31px!important;height:31px!important;font-size:16px!important;top:9px!important;left:9px!important;right:auto!important;transform:none!important;opacity:.88!important;z-index:2}
+#home .tile .topic-progress{display:none!important}
+#home .stars{margin-top:7px}
+@media(min-width:650px){#home .modes{grid-template-columns:repeat(3,minmax(0,1fr))!important}#home .tile{min-height:194px!important}}
+@media(min-width:1000px){#home .modes{grid-template-columns:repeat(4,minmax(0,1fr))!important;max-width:1180px!important;width:100%!important;margin-inline:auto!important}#home .tile{min-height:205px!important}}
+@media(max-width:380px){#home .modes{gap:10px!important}#home .tile{min-height:164px!important;padding:24px 8px 12px!important}#home .tile .art{font-size:32px!important;min-height:53px!important}#home .tile strong{font-size:16px!important}#home .tile small{font-size:11px!important}}
+@media(hover:hover){#home .tile:hover{transform:translateY(-3px)!important;box-shadow:0 12px 30px #3b34652c!important}}
+@media(prefers-reduced-motion:reduce){#home .tile{transition:none!important}}
+</style></head>
+<body><main class="app"><header class="top"><div class="brand">🌈 כִּתָּה א׳ בְּכֵיף</div><div class="header-actions"><button id="globalHome" class="adult-icon" type="button" aria-label="חזרה לתפריט הראשי" title="מסך הבית">🏠</button><button id="adultOpen" class="adult-icon" type="button" aria-label="הגדרות הורים ומעקב התקדמות" title="הורים והתקדמות">⚙️</button><button id="sound" class="pill" aria-label="הפעלת או השתקת דיבור">🔊 קוֹל פָּעוּל</button></div></header>
+<div id="guidePointer" aria-hidden="true">👆</div><section id="home"><div class="guide-banner" id="homeGuide">👂 לִחְצוּ עַל 🔊 לְיַד מִשְׂחָק כְּדֵי לִשְׁמֹעַ מָה לוֹמְדִים</div><div class="hero"><h1>בּוֹאוּ לְשַׂחֵק! 🎉</h1><p>בּוֹחֲרִים מִשְׂחָק וּמַתְחִילִים</p><div class="stars" id="totalStars">⭐⭐⭐</div></div><div class="modes">
+<div role="button" tabindex="0" class="tile t1" data-mode="parity"><span class="art">🧸🧸</span><strong>זוּגִי אוֹ אִי־זוּגִי?</strong><small>מְסַדְּרִים בְּזוּגוֹת</small></div>
+<div role="button" tabindex="0" class="tile t2" data-mode="count"><span class="art">🍎🍎🍎</span><strong>כַּמָּה יֵשׁ?</strong><small>סוֹפְרִים תְּמוּנוֹת</small></div>
+<div role="button" tabindex="0" class="tile t3" data-mode="letters"><span class="art">🐟 ד</span><strong>אוֹת פּוֹתַחַת</strong><small>מַתְאִימִים אוֹת לִתְמוּנָה</small></div>
+<div role="button" tabindex="0" class="tile t4" data-mode="vowels"><span class="art">בָּ בִּ</span><strong>סִימָנֵי נִקּוּד</strong><small>מַקְשִׁיבִים וּמְזַהִים</small></div>
+<div role="button" tabindex="0" class="tile t5" data-mode="compare"><span class="art">🐘 ⚖️ 🐭</span><strong>מִי גָּדוֹל יוֹתֵר?</strong><small>מַשְׁוִים מִסְפָּרִים</small></div>
+<div role="button" tabindex="0" class="tile t6" data-mode="missing"><span class="art">2️⃣ ❓ 4️⃣</span><strong>מִסְפָּר חָסֵר</strong><small>מַשְׁלִימִים סְדָרָה</small></div>
+<div role="button" tabindex="0" class="tile t3" data-mode="build"><span class="art">🐱 🅰️</span><strong>בּוֹנִים מִלִּים</strong><small>גּוֹרְרִים אוֹתִיּוֹת</small></div><div role="button" tabindex="0" class="tile t4" data-mode="match"><span class="art">🧩 אָ</span><strong>מַתְאִימִים נִקּוּד</strong><small>מַתְאִימִים צְלִילִים</small></div><div role="button" tabindex="0" class="tile t5" data-mode="memory"><span class="art">🃏 🐟</span><strong>מִשְׂחַק זִכָּרוֹן</strong><small>מְגַלִּים זוּגוֹת</small></div><div role="button" tabindex="0" class="tile t2" data-mode="clock"><span class="art">🕒 ⏰</span><strong>לוֹמְדִים שָׁעוֹן</strong><small>מְחוֹגִים, דִּיגִיטָלִי וּבֹקֶר אוֹ עֶרֶב</small></div><div role="button" tabindex="0" class="tile t3" data-mode="calendar"><span class="art">📅 ☀️</span><strong>יָמִים וְחֳדָשִׁים</strong><small>שָׁבוּעַ, חֹדֶשׁ וְשָׁנָה</small></div><div role="button" tabindex="0" class="tile t1" data-mode="singular"><span class="art">🍎 🍎🍎</span><strong>יחיד ורבים</strong><small>מילה אחת או כמה מילים</small></div><div role="button" tabindex="0" class="tile t2" data-mode="gender"><span class="art">👦 👧</span><strong>זכר ונקבה</strong><small>מזהים צורות של מילים</small></div><div role="button" tabindex="0" class="tile t3" data-mode="addition"><span class="art">➕ ➖</span><strong>חיבור וחיסור</strong><small>מוסיפים ומורידים</small></div><div role="button" tabindex="0" class="tile t4" data-mode="multiply"><span class="art">✖️ ➗</span><strong>כפל וחילוק</strong><small>קבוצות שוות וחלוקה</small></div><div role="button" tabindex="0" class="tile t5" data-mode="englishLetters"><span class="art">A B C</span><strong>אותיות באנגלית</strong><small>מזהים אות וצליל</small></div><div role="button" tabindex="0" class="tile t6" data-mode="englishWords"><span class="art">🐱 CAT</span><strong>מילים באנגלית</strong><small>תמונה ומילה</small></div><div role="button" tabindex="0" class="tile t1" data-mode="categories"><span class="art">🎻 🎹 🎸</span><strong>משפחות מילים</strong><small>מה שייך לאותה קבוצה?</small></div><div role="button" tabindex="0" class="tile t2" data-mode="gregorian"><span class="art">📅 🌍</span><strong>חודשים לועזיים</strong><small>ינואר עד דצמבר</small></div><div role="button" tabindex="0" class="tile t3" data-mode="hebrewMonths"><span class="art">🌙 📆</span><strong>חודשים עבריים</strong><small>תשרי עד אלול</small></div></div><p class="mini" style="text-align:center;margin-top:24px">🎤 לִחְצוּ עַל 🔊 כְּדֵי לִשְׁמֹעַ אֶת הַהוֹרָאוֹת</p></section>
+<div class="profile-box" id="profileBox">
+<div class="adult-panel-header"><strong>⚙️ אֵזוֹר הוֹרִים</strong><button id="adultClose" type="button" aria-label="סגירה">✕</button></div><div id="profileWelcome">👋 שָׁלוֹם! אֵיךְ קוֹרְאִים לְךָ?</div>
+<label for="childName">🧒 שֵׁם הַיֶּלֶד אוֹ הַיַּלְדָּה</label>
+<div><input id="childName" type="text" maxlength="28" autocomplete="off" placeholder="הַשֵּׁם שֶׁלִּי">
+<label for="childGender" style="margin-inline:8px">אני:</label><select id="childGender" aria-label="בן או בת" style="font:inherit;font-size:21px;padding:9px;border-radius:13px"><option value="boy">👦 בֵּן</option><option value="girl">👧 בַּת</option></select><button id="saveChild" type="button">✨ בּוֹאוּ נַתְחִיל!</button></div>
+<div style="margin:10px 0"><label for="speechSpeed">🎙️ מְהִירוּת הַקְרָאָה</label> <select id="speechSpeed" style="font:inherit;border-radius:10px"><option value="0.7">אִטִּי</option><option value="0.85" selected>רָגִיל</option><option value="1">מָהִיר</option></select> <button type="button" id="testVoice" class="help-voice">🔊 בְּדִיקַת קוֹל</button></div><div id="profileMsg">הַשֵּׁם וְהַהִתְקַדְּמוּת נִשְׁמָרִים רַק בַּדַּפְדְּפָן הַזֶּה.</div>
+<div class="profile-stats" id="profileStats"></div><section id="parentLockControls"><h3>🔐 נעילת נושאים</h3><p>הקוד הראשוני: 1982. אפשר לשנות אותו כאן. נושאים נעולים נפתחים רק לאחר הקשת הקוד.</p><div id="lockTopicRows"></div><label>קוד חדש <input id="newParentPin" type="password" inputmode="numeric" maxlength="8" placeholder="4–8 ספרות"></label> <button id="changeParentPin" type="button">שינוי קוד</button><p id="lockMessage" role="status"></p></section>
+<section id="parentAnalytics" class="parent-analytics" aria-label="דוח התקדמות להורה">
+ <div class="analytics-head"><h2>📊 דוח התקדמות אישי</h2><span class="analytics-live-label">הדוח מוצג כאן באפליקציה</span></div>
+ <div id="analyticsSummary" class="analytics-summary"></div>
+ <div class="analytics-controls"><label>נושא <select id="analyticsTopic"><option value="all">כל הנושאים</option></select></label><label>תקופה <select id="analyticsPeriod"><option value="7">7 ימים</option><option value="30" selected>30 ימים</option><option value="all">כל התקופה</option></select></label></div>
+ <h3>📈 הצלחה לפי נושא</h3><div id="analyticsTopics"></div>
+ <h3>🔎 שאלות שבהן הילד טעה</h3><div id="analyticsMistakes"></div>
+ <h3>💭 איך הילד הרגיש?</h3><div id="analyticsDifficulty"></div><h3>🗓️ תרגולים אחרונים</h3><div id="analyticsSessions"></div>
+ <p class="analytics-note">הדוח מתעדכן מתוך התרגולים באפליקציה ונשמר בדפדפן הזה בלבד, לכל ילד בנפרד. תשובות קודמות לא תועדו לפני הוספת המעקב. אחוז ההצלחה מתייחס לשאלות שתועדו, ולא מהווה אבחון לימודי.</p>
+</section>
+<button id="resumeChild" class="resume-btn" type="button" hidden>▶️ מַמְשִׁיכִים מֵאֵיפֹה שֶׁעָצַרְנוּ</button>
+<button id="newChild" type="button">👤 מַחְלִיפִים יֶלֶד</button>
+</div><section id="lesson" class="lesson hidden">
+<div class="gamebar"><button id="lessonHome" class="pill">🏠 בַּיִת</button><strong id="lessonSubject"></strong><button id="skipLesson" class="pill">🎮 לַמִּשְׂחָק</button></div>
+<div class="meter"><div id="lessonFill" class="fill"></div></div>
+<div id="lessonArt" class="lesson-art"></div><h2 id="lessonTitle" class="lesson-title"></h2>
+<div id="lessonText" class="lesson-text"></div>
+<div class="speechpanel"><div id="lessonSpeechWords" class="speechwords"></div>
+<div class="speechbuttons"><button id="lessonPlay" aria-label="השמע">▶️</button><button id="lessonPause" aria-label="השהה או המשך">⏸️</button><button id="lessonRestart" aria-label="התחל מחדש">🔄</button></div></div>
+<div id="lessonDots" class="dots"></div><div id="lessonGuide" class="guide-banner" hidden>👆 לִחְצוּ עַל הַכַּפְתּוֹר הַבָּא כְּדֵי לְהַמְשִׁיךְ</div>
+<div class="lesson-nav"><button id="lessonHelp" class="help-voice" type="button" aria-label="הסבר קולי על הכפתורים">🔊 עֶזְרָה</button><button id="lessonPrev">➜ הַקּוֹדֶם</button><button id="lessonNext" class="primary">הַבָּא ⬅</button></div>
+</section><section id="game" class="game hidden" aria-live="off"><div class="gamebar"><button id="back" class="pill">🏠 בַּיִת</button><strong id="levelTitle"></strong><button id="repeat" class="pill" aria-label="השמעת ההנחיה שוב">🔊 שׁוּב</button></div><div class="meter"><div id="fill" class="fill"></div></div><div id="questionArea"><div id="prompt" class="prompt"></div><div class="speechpanel"><div id="speechwords" class="speechwords" aria-live="off"></div><div class="speechbuttons"><button id="playSpeech" title="הַקְרָאָה" aria-label="הפעל הקראה">▶️</button><button id="pauseSpeech" title="הַשְׁהָיָה" aria-label="השהה או המשך">⏸️</button><button id="restartSpeech" title="מֵהַתְחָלָה" aria-label="התחל הקראה מחדש">🔄</button></div></div><div id="visual" class="visual"></div><div id="options" class="options"></div><div id="difficultyCheck" aria-label="איך היה לך?"><strong>איך הייתה השאלה?</strong><button type="button" data-difficulty="easy">😊 קל</button><button type="button" data-difficulty="medium">🙂 קצת קשה</button><button type="button" data-difficulty="hard">😓 קשה</button></div><div class="bottom"><div id="feedback" class="feedback" aria-live="polite"></div><button id="next" class="action hidden">הַבָּא ⬅</button></div></div><div id="finish" class="finish hidden"><div class="trophy">🏆</div><h2>כָּל הַכָּבוֹד!</h2><div id="result" class="stars"></div><p>אֵיזֶה כֵּיף לִלְמֹד!</p><button id="again" class="action">🔄 מְשַׂחֲקִים שׁוּב</button><br><button id="finishHome" class="pill">🏠 לְעוֹד מִשְׂחָקִים</button></div></section><aside id="narrator" aria-label="בקרת קריינות" style="position:sticky;bottom:8px;z-index:100;background:#f4f0ff;border:2px solid #b9a7f5;border-radius:22px;padding:10px;margin:12px auto;max-width:680px;box-shadow:0 5px 22px #44337733;text-align:center">
+<div style="font-size:15px;font-weight:800;color:#5a429c">🎙️ הַקְרָאָה: <span id="narratorKind">הוֹרָאוֹת</span></div>
+<div id="narratorText" style="font-size:19px;font-weight:700;line-height:1.8;max-height:110px;overflow:auto" aria-live="off"></div>
+<div style="display:flex;justify-content:center;gap:10px">
+<button id="voicePlay" type="button" aria-label="השמע" style="font-size:23px;border:0;border-radius:14px;padding:10px 18px;background:white">▶️</button>
+<button id="voicePause" type="button" aria-label="השהה או המשך" style="font-size:23px;border:0;border-radius:14px;padding:10px 18px;background:white">⏸️</button>
+<button id="voiceRestart" type="button" aria-label="השמע מהתחלה" style="font-size:23px;border:0;border-radius:14px;padding:10px 18px;background:white">🔄</button>
+</div></aside></main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id), MAX=8;
+const modes={parity:'זוּגִי אוֹ אִי־זוּגִי',count:'כַּמָּה יֵשׁ?',letters:'אוֹת פּוֹתַחַת',vowels:'סִימָנֵי נִקּוּד',compare:'מִי גָּדוֹל יוֹתֵר?',missing:'מִסְפָּר חָסֵר',build:'בּוֹנִים מִלִּים',match:'מַתְאִימִים נִקּוּד',memory:'מִשְׂחַק זִכָּרוֹן',clock:'קוֹרְאִים שָׁעוֹן',calendar:'יָמִים וְחֳדָשִׁים',singular:'יָחִיד וְרַבִּים',gender:'זָכָר וּנְקֵבָה',addition:'חִבּוּר וְחִסּוּר',multiply:'כֶּפֶל וְחִלּוּק',englishLetters:'אוֹתִיּוֹת בְּאַנְגְּלִית',englishWords:'מִלִּים בְּאַנְגְּלִית',categories:'מִשְׁפְּחוֹת מִלִּים',gregorian:'חָדְשֵׁי הַשָּׁנָה הַלּוֹעֲזִית',hebrewMonths:'חָדְשֵׁי הַשָּׁנָה הָעִבְרִית'};
+let mode='',round=0,score=0,question=null,locked=false,soundOn=true,voice=null,started=false,lastNumber=null;
+const rnd=(a,b)=>Math.floor(Math.random()*(b-a+1))+a;
+const shuffle=a=>{const b=[...a];for(let i=b.length-1;i>0;i--){const j=rnd(0,i);[b[i],b[j]]=[b[j],b[i]]}return b};
+
+const STORE_KEY='kita_alef_profiles_v2';
+let childName='', profiles={}, restoredQuestion=null, lastFeedback='', childGender='boy';
+function loadProfiles(){try{const data=JSON.parse(localStorage.getItem(STORE_KEY)||'{}');profiles=data&&typeof data==='object'?data:{}}catch(e){profiles={}}}
+function persistProfiles(){try{localStorage.setItem(STORE_KEY,JSON.stringify(profiles))}catch(e){$('profileMsg').textContent='⚠️ הדפדפן לא מאפשר שמירה קבועה. אפשר להמשיך לשחק.'}}
+function profile(){if(!profiles[childName])profiles[childName]={topics:{},current:null,stars:0,gender:childGender};return profiles[childName]}
+function gendered(boy,girl){return childGender==='girl'?girl:boy}
+function personal(text){return text} // The name is spoken only at the start of a session, not in every instruction.
+function personalizedFeedback(ok){return ok?'יופי! התשובה טובה מאוד.':'כמעט. עכשיו נשמע מה התשובה.'}
+// The visible educational text remains pointed; only the spoken text is normalized.
+const speechNumbers=['אפס','אחת','שתיים','שלוש','ארבע','חמש','שש','שבע','שמונה','תשע','עשר','אחת עשרה','שתים עשרה','שלוש עשרה','ארבע עשרה','חמש עשרה','שש עשרה','שבע עשרה','שמונה עשרה','תשע עשרה','עשרים','עשרים ואחת','עשרים ושתיים','עשרים ושלוש','עשרים וארבע'];
+function spokenNumber(n){n=Number(n);return Number.isInteger(n)&&n>=0&&n<speechNumbers.length?speechNumbers[n]:String(n)}
+function spokenTime(h,m){h=Number(h);m=Number(m);const day=h>=12?'בערב':'בבוקר';const hh=h>12?h-12:h===0?12:h;return 'השעה '+spokenNumber(hh)+(m===30?' וחצי':m===15?' ורבע':m===45?' וארבעים וחמש דקות':m===0?'': ' ו '+spokenNumber(m)+' דקות')+' '+day}
+function normalizeSpeech(raw){
+ let t=String(raw||'').normalize('NFC').replace(/[\u0591-\u05BD\u05BF-\u05C7]/g,'');
+ // Convert time expressions before generic numbers. Explicit word boundaries do not work for Hebrew.
+ t=t.replace(/(^|[^0-9])(\d{1,2}):(00|05|10|15|30|45|50)(?!\d)/g,(_,before,h,m)=>before+spokenTime(h,m));
+ t=t.replace(/(^|[^\d])([0-9]{1,2})(?!\d)/g,(_,before,n)=>before+spokenNumber(n));
+ // Prefer unambiguous phrases when the installed Hebrew voice guesses poorly.
+ t=t.replace(/אי[־-]זוגי/g,'לא זוגי').replace(/בואו ננסה שוב/g,'אפשר לנסות שוב');
+ return t.replace(/\s+/g,' ').trim();
+}
+function speechRate(){return Number($('speechSpeed')?.value||0.85)}
+
+function savePosition(stage){
+ if(!childName)return;
+ const data=profile();
+ data.current={stage,mode:stage==='lesson'?lessonMode:mode,lessonIndex:stage==='lesson'?lessonIndex:undefined,round,score,locked:stage==='game'?locked:false,question:stage==='game'?question:null,feedback:stage==='game'?lastFeedback:''};
+ if(stage==='game'&&mode){const t=data.topics[mode]||(data.topics[mode]={best:0,attempts:0,completed:0});t.lastRound=round;t.lastScore=score}
+ persistProfiles();renderProfile();
+}
+function renderProfile(){
+ const active=!!childName;
+ $('profileWelcome').textContent=active?'🌟 שָׁלוֹם, '+childName+'!':'👋 אֵיךְ קוֹרְאִים לְךָ?';
+ $('childName').value=childName;if(active){childGender=profile().gender||'boy';$('childGender').value=childGender;}
+ const current=active?profile().current:null;
+ $('resumeChild').hidden=!current;
+ if(current)$('resumeChild').textContent='▶️ נַמְשִׁיךְ '+modes[current.mode]+' — '+(current.stage==='lesson'?'שִׁקּוּפִית '+(current.lessonIndex+1):'שְׁאֵלָה '+(current.round+1));
+ const t=active?Object.values(profile().topics):[];
+ const completed=t.reduce((n,x)=>n+(x.completed||0),0);
+ const attempted=t.reduce((n,x)=>n+(x.attempts||0),0);
+ $('profileStats').textContent=active?'🏆 '+completed+' מִשְׂחָקִים שֶׁהֻשְׁלְמוּ  ·  ⭐ '+(profile().stars||0)+' כּוֹכָבִים  ·  🎯 '+attempted+' שְׁאֵלוֹת שֶׁנֶּעֶנּוּ':'';
+ document.querySelectorAll('[data-mode]').forEach(btn=>{
+  const key=btn.dataset.mode;
+  let meter=btn.querySelector('.topic-progress');
+  if(!meter){meter=document.createElement('div');meter.className='topic-progress';meter.innerHTML='<div></div>';btn.append(meter)}
+  const t=active?profile().topics[key]:null;
+  meter.firstElementChild.style.width=(t?(t.completed?100:Math.min(100,(t.lastRound||0)/MAX*100)):0)+'%';
+  btn.title=t?`הושלמו ${t.completed||0} משחקים. שיא ${t.best||0} מתוך ${MAX}`:'טרם תורגל';
+ });
+}
+function setChild(name){
+ const clean=String(name||'').trim().replace(/\s+/g,' ').slice(0,28);
+ if(!clean){$('profileMsg').textContent='כִּתְבוּ שֵׁם כְּדֵי לְהַתְחִיל.';return false}
+ childName=clean;childGender=$('childGender').value;try{localStorage.setItem('kita_alef_active_child_v2',clean)}catch(e){}
+ profile().gender=childGender;persistProfiles();renderProfile();
+ speak((childName?childName+', ':'')+gendered('איזה כיף שבאת! בוא נלמד ונשחק.','איזה כיף שבאת! בואי נלמד ונשחק.'));
+ return true
+}
+function resumeProgress(){
+ if(!childName||!profile().current)return;
+ const c=profile().current;
+ if(!modes[c.mode])return;
+ if(c.stage==='lesson'){
+  lessonMode=c.mode;lessonIndex=Math.min(c.lessonIndex||0,lessonData[lessonMode].length-1);
+  $('home').classList.add('hidden');$('game').classList.add('hidden');$('lesson').classList.remove('hidden');
+  $('lessonSubject').textContent=modes[lessonMode];lessonSlide();
+ }else{
+  mode=c.mode;round=Math.max(0,Math.min(MAX-1,c.round||0));score=c.score||0;locked=!!c.locked;
+  restoredQuestion=c.question;lastFeedback=c.feedback||'';
+  $('home').classList.add('hidden');$('lesson').classList.add('hidden');$('game').classList.remove('hidden');
+  $('questionArea').classList.remove('hidden');$('finish').classList.add('hidden');$('levelTitle').textContent=modes[mode];
+  renderQuestion();
+ }
+ window.scrollTo(0,0)
+}
+$('saveChild').onclick=()=>setChild($('childName').value);
+$('childName').addEventListener('keydown',e=>{if(e.key==='Enter')setChild($('childName').value)});
+$('newChild').onclick=()=>{$('childName').value='';$('childName').focus();$('profileMsg').textContent='הַקְלִידוּ שֵׁם חָדָשׁ. לְכָל יֶלֶד נִשְׁמֶרֶת הִתְקַדְּמוּת נִפְרֶדֶת.'};
+$('resumeChild').onclick=resumeProgress;
+$('childGender').onchange=()=>{childGender=$('childGender').value;if(childName){profile().gender=childGender;persistProfiles()}};
+$('speechSpeed').onchange=()=>{try{localStorage.setItem('kita_alef_speech_speed',$('speechSpeed').value)}catch(e){}};
+try{$('speechSpeed').value=localStorage.getItem('kita_alef_speech_speed')||'0.85'}catch(e){}
+$('testVoice').onclick=()=>speak(personal(gendered('שלום! אני שמח שאתה לומד איתי. לחץ על הרמקול כדי לשמוע שוב.','שלום! אני שמחה שאת לומדת איתי. לחצי על הרמקול כדי לשמוע שוב.')));
+loadProfiles();try{childName=localStorage.getItem('kita_alef_active_child_v2')||''}catch(e){}
+if(childName)profile();renderProfile();
+
+function loadVoices(){if(!('speechSynthesis' in window))return;const vs=speechSynthesis.getVoices();voice=vs.find(v=>v.lang.toLowerCase()==='he-il'&&/google/i.test(v.name))||vs.find(v=>v.lang.toLowerCase()==='he-il')||vs.find(v=>v.lang.toLowerCase().startsWith('he'))||null}
+if('speechSynthesis' in window){loadVoices();speechSynthesis.onvoiceschanged=loadVoices}
+let currentSpeech='',activeUtterance=null,speechWords=[],speechToken=0;
+function highlightWord(index){speechWords.forEach((el,i)=>el.classList.toggle('active',i===index))}
+function showSpeech(text){currentSpeech=text;const panel=$('speechwords');panel.replaceChildren();speechWords=[];const regex=/\S+/g;let m;while((m=regex.exec(text))){const span=document.createElement('span');span.className='word';span.textContent=m[0];span.dataset.start=m.index;panel.append(span);speechWords.push(span)}}
+function speak(text,refresh=true){if(refresh)showSpeech(text);setNarration(text,'הַקְרָאָה',false);if(!soundOn||!('speechSynthesis' in window))return;stopSpeech();const token=++speechToken;try{const u=new SpeechSynthesisUtterance(normalizeSpeech(text));activeUtterance=u;u.lang='he-IL';if(voice)u.voice=voice;u.rate=speechRate();u.pitch=1;u.onboundary=e=>{if(token!==speechToken)return;const i=speechWords.findIndex((w,j)=>Number(w.dataset.start)<=e.charIndex&&(j===speechWords.length-1||Number(speechWords[j+1].dataset.start)>e.charIndex));if(i>=0)highlightWord(i)};u.onend=()=>{if(token===speechToken)highlightWord(-1)};u.onerror=()=>{if(token===speechToken)highlightWord(-1)};speechSynthesis.speak(u)}catch(e){console.warn('Speech unavailable',e)}}
+function stopSpeech(){narrationToken++;speechToken++;if('speechSynthesis' in window)speechSynthesis.cancel();highlightWord(-1);$('pauseSpeech').textContent='⏸️'}
+function pauseSpeech(){if(!('speechSynthesis' in window))return;if(speechSynthesis.paused){speechSynthesis.resume();$('pauseSpeech').textContent='⏸️'}else if(speechSynthesis.speaking){speechSynthesis.pause();$('pauseSpeech').textContent='▶️'}}
+$('playSpeech').onclick=()=>{if('speechSynthesis' in window&&speechSynthesis.paused){speechSynthesis.resume();$('pauseSpeech').textContent='⏸️'}else{const line=question?.spoken||question?.prompt||$('prompt').textContent;speak(line,true)}};
+$('pauseSpeech').onclick=pauseSpeech;
+$('restartSpeech').onclick=()=>{stopSpeech();$('pauseSpeech').textContent='⏸️';speak(currentSpeech,false)};
+$('sound').onclick=()=>{soundOn=!soundOn;$('sound').textContent=soundOn?'🔊 קוֹל פָּעוּל':'🔇 קוֹל כָּבוּי';if(soundOn)speak('יופי! עכשיו אפשר לשמוע אותי.');else stopSpeech()};
+
+let narrationText='', narrationKind='הוֹרָאוֹת', narrationToken=0, narrationUtterance=null;
+function setNarration(text,kind='הוֹרָאוֹת',auto=true){
+  narrationText=String(text||'');narrationKind=kind;
+  $('narratorKind').textContent=kind;
+  const host=$('narratorText');host.replaceChildren();
+  for(const m of narrationText.matchAll(/\S+/g)){
+    const span=document.createElement('span');span.className='spoken-word';
+    span.textContent=m[0];span.dataset.start=m.index;host.append(span);
+  }
+  if(auto)playNarration();
+}
+function playNarration(){
+  narrationToken++;if('speechSynthesis' in window)speechSynthesis.cancel();
+  if(!soundOn||!('speechSynthesis' in window)||!narrationText)return;
+  const token=narrationToken;
+  const u=new SpeechSynthesisUtterance(normalizeSpeech(narrationText));narrationUtterance=u;
+  u.lang='he-IL';if(voice)u.voice=voice;u.rate=speechRate();u.pitch=1;
+  const words=[...$('narratorText').children];
+  const clear=()=>words.forEach(w=>w.classList.remove('active'));
+  u.onboundary=e=>{
+    if(token!==narrationToken)return;
+    const index=words.findIndex((w,i)=>Number(w.dataset.start)<=e.charIndex&&(i===words.length-1||Number(words[i+1].dataset.start)>e.charIndex));
+    clear();if(index>=0)words[index].classList.add('active');
+  };
+  u.onend=()=>{if(token===narrationToken)clear()};
+  u.onerror=()=>{if(token===narrationToken)clear()};
+  speechSynthesis.speak(u);$('voicePause').textContent='⏸️';
+}
+function pauseNarration(){
+  if(!('speechSynthesis' in window))return;
+  if(speechSynthesis.paused){speechSynthesis.resume();$('voicePause').textContent='⏸️'}
+  else if(speechSynthesis.speaking){speechSynthesis.pause();$('voicePause').textContent='▶️'}
+}
+$('voicePlay').onclick=()=>{if('speechSynthesis' in window&&speechSynthesis.paused)pauseNarration();else playNarration()};
+$('voicePause').onclick=pauseNarration;
+$('voiceRestart').onclick=playNarration;
+
+const pictures=[{emoji:'🐟',letter:'ד',name:'דג'},{emoji:'🍎',letter:'ת',name:'תפוח'},{emoji:'🐱',letter:'ח',name:'חתול'},{emoji:'🐘',letter:'פ',name:'פיל'},{emoji:'🐻',letter:'ד',name:'דוב'},{emoji:'🏠',letter:'ב',name:'בית'},{emoji:'🌸',letter:'פ',name:'פרח'},{emoji:'🦋',letter:'פ',name:'פרפר'},{emoji:'🦁',letter:'א',name:'אריה'},{emoji:'🐰',letter:'א',name:'ארנב'},{emoji:'🐍',letter:'נ',name:'נחש'},{emoji:'🐒',letter:'ק',name:'קוף'},{emoji:'🥕',letter:'ג',name:'גזר'},{emoji:'☀️',letter:'ש',name:'שמש'},{emoji:'🌙',letter:'י',name:'ירח'},{emoji:'🍼',letter:'ב',name:'בקבוק'},{emoji:'🚗',letter:'מ',name:'מכונית'},{emoji:'🎈',letter:'ב',name:'בלון'},{emoji:'🧀',letter:'ג',name:'גבינה'},{emoji:'🍋',letter:'ל',name:'לימון'}];
+const vowelSet=[{mark:'ָ',name:'קָמָץ',spoken:'קמץ',sound:'אָ',say:'אָה'},{mark:'ַ',name:'פַּתָּח',spoken:'פתח',sound:'אַ',say:'אַה'},{mark:'ִ',name:'חִירִיק',spoken:'חיריק',sound:'אִ',say:'אִי'},{mark:'ֶ',name:'סֶגוֹל',spoken:'סגול',sound:'אֶ',say:'אֶה'},{mark:'ֵ',name:'צֵירֵי',spoken:'צירי',sound:'אֵ',say:'אֵה'},{mark:'ֹ',name:'חוֹלָם',spoken:'חולם',sound:'אוֹ',say:'אוֹ'}];
+function numberOptions(n,max=12){const s=new Set([n]);while(s.size<4)s.add(rnd(1,max));return shuffle([...s])}
+function makeQuestion(){
+if(mode==='build'||mode==='match'||mode==='memory')return{visual:mode,prompt:mode==='build'?'בּוֹנִים אֶת הַמִּלָּה!':mode==='match'?'מַתְאִימִים צְלִיל לְנִקּוּד!':'מְגַלִּים זוּגוֹת!',spoken:mode==='build'?'בחרו אותיות לפי הסדר כדי לבנות את המילה שמתאימה לציור.':mode==='match'?'בחרו את האות עם סימן הניקוד המתאים לצליל.':'הפכו שני קלפים ונסו למצוא זוגות תואמים.'};
+if(mode==='clock')return makeClockQuestion();
+if(mode==='calendar')return makeCalendarQuestion();
+if(['singular','gender','addition','multiply','englishLetters','englishWords','categories','gregorian','hebrewMonths'].includes(mode))return extraQuestion(mode);
+if(mode==='parity'){let n=rnd(1,12);if(n===lastNumber)n=n%12+1;lastNumber=n;return{prompt:'זוּגִי אוֹ אִי־זוּגִי?',spoken:`המספר הוא ${n}. האם אפשר לסדר את כולם בזוגות בלי שיישאר אחד לבד?`,visual:'pairs',n,emoji:['🍎','🐻','⭐','🎈','🍓'][round%5],answers:[{label:'👫 זוּגִי',value:'even'},{label:'🧍 אִי־זוּגִי',value:'odd'}],correct:n%2?'odd':'even',explain:n%2?`${n} הוא מספר אי זוגי. אחד נשאר לבד.`:`${n} הוא מספר זוגי. לכולם יש זוג.`}}
+if(mode==='count'){const n=rnd(1,10);return{prompt:'כַּמָּה יֵשׁ?',spoken:'ספרו את התמונות. כמה יש?',visual:'count',n,emoji:['🍓','🐸','🌟','🍎','🦋','🚗'][round%6],answers:numberOptions(n,12).map(x=>({label:String(x),value:x})),correct:n,explain:`נכון! יש ${n}.`}}
+if(mode==='letters'){const p=pictures[rnd(0,pictures.length-1)];const others=shuffle([...new Set(pictures.map(x=>x.letter).filter(x=>x!==p.letter))]).slice(0,3);return{prompt:'בְּאֵיזוֹ אוֹת מַתְחִילָה הַמִּלָּה?',spoken:`זו ${p.name}. באיזו אות מתחילה המילה ${p.name}?`,visual:'picture',emoji:p.emoji,caption:p.name,answers:shuffle([p.letter,...others]).map(x=>({label:x,value:x})),correct:p.letter,explain:`המילה ${p.name} מתחילה באות ${p.letter}.`}}
+if(mode==='vowels'){const v=vowelSet[rnd(0,vowelSet.length-1)];const others=shuffle(vowelSet.filter(x=>x!==v)).slice(0,3);return{prompt:'אֵיזֶה סִימָן נִקּוּד זֶה?',spoken:`הביטו באות עם הניקוד. איך קוראים לסימן הניקוד?`,visual:'vowel',symbol:'בּ'+v.mark,answers:shuffle([v,...others]).map(x=>({label:'בּ'+x.mark,sub:x.name,value:x.name})),correct:v.name,explain:`זה ${v.spoken}.`}}
+if(mode==='compare'){let a=rnd(1,10),b=rnd(1,10);while(b===a)b=rnd(1,10);return{prompt:'אֵיזֶה מִסְפָּר גָּדוֹל יוֹתֵר?',spoken:`איזה מספר גדול יותר? ${a} או ${b}?`,visual:'compare',a,b,answers:[{label:String(a),value:a},{label:String(b),value:b}],correct:Math.max(a,b),explain:`${Math.max(a,b)} גדול יותר.`}}
+const n=rnd(2,9);return{prompt:'מָה הַמִּסְפָּר הֶחָסֵר?',spoken:`איזה מספר חסר בין ${n-1} ל ${n+1}?`,visual:'missing',n,answers:numberOptions(n,11).map(x=>({label:String(x),value:x})),correct:n,explain:`נכון! אחרי ${n-1} בא ${n}, ואז ${n+1}.`};
+}
+function renderVisual(q){const v=$('visual');v.replaceChildren();if(q.visual==='calendar'){drawCalendarQuestion(v,q);return;}if(q.visual==='math-extra'){const box=document.createElement('div');box.className='sequence-scene';box.dir='ltr';box.textContent=q.a+' '+q.sign+' '+q.b+' = ?';v.append(box);return;}if(q.visual==='month-extra'){const box=document.createElement('div');box.className='sequence-scene';box.textContent='📅 '+q.month+' ➜ ❓';v.append(box);return;}if(q.visual==='clock'||q.visual==='digital-only'){drawClockQuestion(v,q);return;}if(q.visual==='pairs'||q.visual==='count'){
+if(q.visual==='pairs'){const num=document.createElement('div');num.className='big';num.style.fontSize='65px';num.textContent=q.n;v.append(num)}
+const holder=document.createElement('div');holder.className='pairs';for(let i=0;i<q.n;i+=(q.visual==='pairs'?2:1)){const node=document.createElement('div');node.className=q.visual==='pairs'?(i+1<q.n?'pair':'lonely'):'pair';node.textContent=q.visual==='pairs'&&i+1<q.n?q.emoji+q.emoji:q.emoji;holder.append(node)}v.append(holder);
+}else if(q.visual==='picture'){const e=document.createElement('div');e.className='emoji-big';e.textContent=q.emoji;v.append(e)}else if(q.visual==='vowel'){const e=document.createElement('div');e.className='big';e.textContent=q.symbol;v.append(e)}else if(q.visual==='compare'){const e=document.createElement('div');e.className='big';e.style.fontSize='clamp(60px,13vw,96px)';e.textContent=`${q.a}  ⚖️  ${q.b}`;v.append(e)}else{const e=document.createElement('div');e.className='big';e.style.fontSize='clamp(54px,12vw,85px)';e.textContent=`${q.n-1}  ❓  ${q.n+1}`;v.append(e)}}
+function renderQuestion(){stopSpeech();const resumed=!!restoredQuestion;const wasLocked=resumed&&locked;locked=false;question=restoredQuestion||makeQuestion();restoredQuestion=null;if(['build','match','memory'].includes(mode)){renderSpecial();savePosition('game');return;}$('prompt').textContent=question.prompt;$('feedback').textContent='';$('next').classList.add('hidden');$('fill').style.width=`${round/MAX*100}%`;renderVisual(question);const opts=$('options');opts.replaceChildren();question.answers.forEach(ans=>{const b=document.createElement('button');b.className='option';b.type='button';b.dataset.value=String(ans.value);b.textContent=ans.label;if(ans.sub){const s=document.createElement('span');s.className='sub';s.textContent=ans.sub;b.append(s)}b.onclick=()=>choose(ans.value,b);const row=document.createElement('div');row.className='answer-card';const listen=document.createElement('button');listen.type='button';listen.className='answer-audio';listen.textContent='🔊';listen.setAttribute('aria-label','הקרא אפשרות '+ans.label);listen.onclick=()=>speak('אפשרות: '+(ans.sub||ans.label));row.append(b,listen);opts.append(row)});if(resumed&&wasLocked){locked=true;$('feedback').textContent=lastFeedback;$('next').textContent=round===MAX-1?'🏆 לַתּוֹצָאוֹת':'הַבָּא ⬅';$('next').classList.remove('hidden');[...opts.querySelectorAll('button.option')].forEach(b=>{b.disabled=true;if(b.dataset.value===String(question.correct))b.classList.add('good')});speak(personal('נמשיך מהשאלה האחרונה. '+lastFeedback))}else{speak(personal(modes[mode]+'. '+question.spoken))}savePosition('game')}
+function choose(value,button){if(locked)return;locked=true;const ok=value===question.correct;if(ok)score++;if(childName){const t=profile().topics[mode]||(profile().topics[mode]={best:0,attempts:0,completed:0});t.attempts++;if(ok)profile().stars=(profile().stars||0)+1}const buttons=[...$('options').querySelectorAll('button.option')];buttons.forEach(b=>{b.disabled=true;if(b.dataset.value===String(question.correct))b.classList.add('good')});if(!ok)button.classList.add('bad');$('feedback').textContent=ok?'🎉 מְצֻיָּן! ⭐':'💜 כִּמְעַט! נְנַסֶּה שׁוּב בַּפַּעַם הַבָּאָה';$('feedback').style.color=ok?'#128b63':'#a25875';$('next').textContent=round===MAX-1?'🏆 לַתּוֹצָאוֹת':'הַבָּא ⬅';$('next').classList.remove('hidden');if(ok)celebrate(10);lastFeedback=ok?'כל הכבוד! תשובה נכונה.':'כמעט. הנה התשובה.';savePosition('game');speak(personal(personalizedFeedback(ok)+' '+(ok?'':'התשובה היא '+(question.answers.find(a=>a.value===question.correct)?.label||'זו האפשרות המסומנת')+'. ')+question.explain))}
+function celebrate(count){const items=['⭐','🎉','💛','💜','✨'];for(let i=0;i<count;i++){const e=document.createElement('div');e.className='confetti';e.textContent=items[rnd(0,items.length-1)];e.style.left=rnd(5,95)+'vw';e.style.top=rnd(0,15)+'vh';e.style.animationDelay=(i*.08)+'s';document.body.append(e);setTimeout(()=>e.remove(),2400)}}
+function start(m){stopSpeech();started=true;mode=m;round=0;score=0;lastNumber=null;$('home').classList.add('hidden');$('game').classList.remove('hidden');$('questionArea').classList.remove('hidden');$('finish').classList.add('hidden');$('levelTitle').textContent=modes[m];renderQuestion();savePosition('game');window.scrollTo({top:0,behavior:'smooth'})}
+function home(){stopSpeech();if(!$('lesson').classList.contains('hidden'))$('lesson').classList.add('hidden');$('game').classList.add('hidden');$('home').classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'})}
+function next(){stopSpeech();round++;if(round>=MAX){if(childName){const t=profile().topics[mode]||(profile().topics[mode]={best:0,attempts:0,completed:0});t.completed++;t.best=Math.max(t.best||0,score);t.lastRound=MAX;profile().current=null;persistProfiles();renderProfile()}$('fill').style.width='100%';$('questionArea').classList.add('hidden');$('finish').classList.remove('hidden');$('result').textContent=`${score} / ${MAX} ⭐`;celebrate(25);speak(personal(gendered(`כל הכבוד! סיימת את המשחק! הצלחת ב ${score} מתוך ${MAX} שאלות. בוא נשחק שוב!`,`כל הכבוד! סיימת את המשחק! הצלחת ב ${score} מתוך ${MAX} שאלות. בואי נשחק שוב!`)))}else renderQuestion()}
+const buildWords=[{emoji:'🐱',word:'חָתוּל',letters:['ח','ת','ו','ל'],spoken:'חתול'},{emoji:'🐟',word:'דָּג',letters:['ד','ג'],spoken:'דג'},{emoji:'🏠',word:'בַּיִת',letters:['ב','י','ת'],spoken:'בית'},{emoji:'🌸',word:'פֶּרַח',letters:['פ','ר','ח'],spoken:'פרח'},{emoji:'☀️',word:'שֶׁמֶשׁ',letters:['ש','מ','ש'],spoken:'שמש'},{emoji:'🐘',word:'פִּיל',letters:['פ','י','ל'],spoken:'פיל'},{emoji:'🍋',word:'לִימוֹן',letters:['ל','י','מ','ו','ן'],spoken:'לימון'},{emoji:'🐻',word:'דֹּב',letters:['ד','ו','ב'],spoken:'דוב'}];
+let specialState=null;
+function renderSpecial(){const q=question;$('prompt').textContent=q.prompt;$('feedback').textContent='';$('next').classList.add('hidden');$('fill').style.width=`${round/MAX*100}%`;$('options').replaceChildren();$('visual').replaceChildren();$('visual').style.minHeight='230px';if(mode==='build')renderBuild();else if(mode==='match')renderMatch();else renderMemory();speak(q.spoken)}
+function completeSpecial(ok=true){if(locked)return;locked=true;if(ok)score++;if(childName){const t=profile().topics[mode]||(profile().topics[mode]={best:0,attempts:0,completed:0});t.attempts++;if(ok)profile().stars=(profile().stars||0)+1}$('feedback').textContent=ok?'🎉 מְצֻיָּן! ⭐':'💜 כִּמְעַט!';$('feedback').style.color=ok?'#128b63':'#a25875';$('next').textContent=round===MAX-1?'🏆 לַתּוֹצָאוֹת':'הַבָּא ⬅';$('next').classList.remove('hidden');if(ok)celebrate(9);lastFeedback=ok?'כל הכבוד! תשובה נכונה!':'כמעט!';savePosition('game');speak(personal(personalizedFeedback(ok)))}
+function renderBuild(){const w=buildWords[round%buildWords.length];specialState={w,placed:[],selected:null};const v=$('visual');const picture=document.createElement('div');picture.className='modeart';picture.textContent=w.emoji;v.append(picture);const slots=document.createElement('div');slots.className='dropzone';v.append(slots);const tray=document.createElement('div');tray.className='dragzone';v.append(tray);const pieces=shuffle(w.letters.map((letter,i)=>({letter,id:i})));let selected=null;function draw(){slots.replaceChildren();w.letters.forEach((_,i)=>{const slot=document.createElement('button');slot.className='slot'+(specialState.placed[i]?' filled':'');slot.textContent=specialState.placed[i]?.letter||'❔';slot.setAttribute('aria-label','מקום אות '+(i+1));slot.onclick=()=>{if(specialState.placed[i]&&!locked){specialState.placed.splice(i,1);draw()}};slot.ondragover=e=>e.preventDefault();slot.ondrop=e=>{e.preventDefault();put(Number(e.dataTransfer.getData('text/plain')))};slots.append(slot)});tray.replaceChildren();pieces.filter(p=>!specialState.placed.some(x=>x.id===p.id)).forEach(p=>{const b=document.createElement('button');b.className='chip'+(selected===p.id?' selected':'');b.textContent=p.letter;b.draggable=true;b.ondragstart=e=>e.dataTransfer.setData('text/plain',p.id);b.onclick=()=>put(p.id);tray.append(b)})}function put(id){if(locked)return;const p=pieces.find(x=>x.id===id);if(!p||specialState.placed.some(x=>x.id===id))return;specialState.placed.push(p);draw();if(specialState.placed.length===w.letters.length){if(specialState.placed.every((x,i)=>x.letter===w.letters[i])){completeSpecial();speak('נהדר! בניתם את המילה '+w.spoken)}else{$('feedback').textContent='🔄 נְנַסֶּה לְסַדֵּר שׁוּב';recordPracticeError(specialState.placed.map(x=>x.letter).join(''),w.word,'ניסיון שגוי בבניית מילה');speak('כמעט. נסו לסדר את האותיות שוב.');specialState.placed=[];setTimeout(draw,500)}}}draw();}
+function renderMatch(){const v=$('visual');const vowels=[{label:'קָמָץ',sound:'אָ',symbol:'בָּ',say:'קמץ'},{label:'חִירִיק',sound:'אִי',symbol:'בִּ',say:'חיריק'},{label:'חוֹלָם',sound:'אוֹ',symbol:'בֹּ',say:'חולם'},{label:'סֶגוֹל',sound:'אֶ',symbol:'בֶּ',say:'סגול'}];const target=vowels[round%vowels.length];const display=document.createElement('div');display.className='big';display.textContent=target.sound;v.append(display);const options=$('options');shuffle(vowels).forEach(x=>{const b=document.createElement('button');b.className='option';b.textContent=x.symbol;b.onclick=()=>{if(locked)return;if(x===target){b.classList.add('good');completeSpecial();speak('כל הכבוד! זה '+target.say)}else{b.classList.add('bad');recordPracticeError(x.say,target.say,'ניסיון שגוי בהתאמת ניקוד');speak('כמעט, נסו שוב.');setTimeout(()=>b.classList.remove('bad'),650)}};options.append(b)});qSpeak('הקשיבו לצליל ובחרו את הניקוד המתאים. '+target.say);function qSpeak(t){question.spoken=t}}
+function renderMemory(){const v=$('visual');const items=[['🐟','דָּג'],['🐱','חָתוּל'],['🏠','בַּיִת'],['🌸','פֶּרַח']];const deck=shuffle(items.flatMap((p,i)=>[{id:i,text:p[0]},{id:i,text:p[1]}]));let open=[],matched=new Set(),busy=false;const grid=document.createElement('div');grid.className='memorygrid';v.append(grid);deck.forEach((card,i)=>{const b=document.createElement('button');b.className='memorycard';b.textContent='❔';b.setAttribute('aria-label','קלף '+(i+1));b.onclick=()=>{if(busy||matched.has(card.id)||open.some(x=>x.i===i)||locked)return;b.classList.add('open');b.textContent=card.text;open.push({i,card,b});if(open.length===2){if(open[0].card.id===open[1].card.id){matched.add(card.id);open.forEach(x=>x.b.classList.add('matched'));open=[];speak('מצאתם זוג!');if(matched.size===4){completeSpecial();speak('כל הכבוד! מצאתם את כל הזוגות!')}}else{busy=true;recordPracticeError(open.map(x=>x.card.text).join(' + '),'שני קלפים תואמים','ניסיון שגוי בזיכרון');speak('הַקְּלָפִים לֹא מַתְאִימִים. נְנַסֶּה שׁוּב.');setTimeout(()=>{open.forEach(x=>{x.b.classList.remove('open');x.b.textContent='❔'});open=[];busy=false},950)}}};grid.append(b)})}
+document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>openLesson(b.dataset.mode));$('back').onclick=home;$('finishHome').onclick=home;$('repeat').onclick=()=>{if(question&&$('finish').classList.contains('hidden'))speak(question.spoken);else speak('כל הכבוד!')};$('next').onclick=next;$('again').onclick=()=>start(mode);
+
+
+function clockSVG(h,m){
+ const ns='http://www.w3.org/2000/svg';
+ const svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 300 300');svg.setAttribute('role','img');svg.setAttribute('aria-label','שעון מחוגים');
+ svg.style.cssText='width:min(86vw,350px);height:auto;aspect-ratio:1;display:block;margin:auto;direction:ltr;overflow:visible;flex:none';svg.setAttribute('direction','ltr');svg.setAttribute('xmlns',ns);
+ const make=(tag,attrs,txt)=>{let e=document.createElementNS(ns,tag);for(let [k,v] of Object.entries(attrs))e.setAttribute(k,v);if(txt!==undefined)e.textContent=txt;svg.append(e);return e};
+ make('circle',{cx:150,cy:150,r:143,fill:'#ffffff',stroke:'#6445b8','stroke-width':10});
+ for(let i=0;i<60;i++){let a=i*Math.PI/30;let big=i%5===0;make('line',{x1:150+Math.sin(a)*(big?119:128),y1:150-Math.cos(a)*(big?119:128),x2:150+Math.sin(a)*133,y2:150-Math.cos(a)*133,stroke:'#8062b2','stroke-width':big?4:2})}
+ for(let i=1;i<=12;i++){let a=i*Math.PI/6;make('text',{x:150+Math.sin(a)*103,y:150-Math.cos(a)*103+10,'text-anchor':'middle','font-size':30,'font-weight':900,fill:'#21164f','font-family':'Arial, sans-serif',direction:'ltr','unicode-bidi':'isolate'},String(i))}
+ const hand=(angle,len,width,color)=>{let a=angle*Math.PI/180;make('line',{x1:150,y1:150,x2:150+Math.sin(a)*len,y2:150-Math.cos(a)*len,stroke:color,'stroke-width':width,'stroke-linecap':'round'})};
+ hand((h%12+m/60)*30,65,12,'#e35c81');hand(m*6,91,7,'#2086c5');
+ make('circle',{cx:150,cy:150,r:9,fill:'#473289'});return svg
+}
+const clockName=['שְׁתֵּים עֶשְׂרֵה','אַחַת','שְׁתַּיִם','שָׁלוֹשׁ','אַרְבַּע','חָמֵשׁ','שֵׁשׁ','שֶׁבַע','שְׁמוֹנֶה','תֵּשַׁע','עֶשֶׂר','אַחַת עֶשְׂרֵה'];
+const clockSay=['שתים עשרה','אחת','שתיים','שלוש','ארבע','חמש','שש','שבע','שמונה','תשע','עשר','אחת עשרה'];
+const two=n=>String(n).padStart(2,'0');
+function makeClockQuestion(){
+ const cases=[
+ [5,0,'05:00','חָמֵשׁ בְּדִיּוּק','חמש בדיוק'],
+ [10,5,'10:05','עֶשֶׂר וְחָמֵשׁ','עשר וחמש דקות'],
+ [4,10,'04:10','אַרְבַּע וְעֶשֶׂר','ארבע ועשר דקות'],
+ [2,15,'02:15','שְׁתַּיִם וָרֶבַע','שתיים ורבע'],
+ [7,30,'07:30','שֶׁבַע וָחֵצִי','שבע וחצי'],
+ [8,45,'08:45','רֶבַע לְתֵשַׁע','רבע לתשע'],
+ [6,50,'06:50','עֶשֶׂר דַּקּוֹת לְשֶׁבַע','עשר דקות לשבע'],
+ [7,0,'19:00','שֶׁבַע בָּעֶרֶב','שבע בערב']
+ ];
+ const [h,m,digital,label,spoken]=cases[round%cases.length];
+ const choices=cases.filter((_,i)=>i!==round%cases.length).map(x=>x[3]);
+ const answers=shuffle([label,...shuffle(choices).slice(0,3)]).map(x=>({label:x,value:x}));
+ return {visual:'clock',h,m,digital,prompt:'אֵיזוֹ שָׁעָה מַרְאֶה הַשָּׁעוֹן?',spoken:'הסתכלו על המחוגים ועל הספרות. מה השעה?',answers,correct:label,explain:'השעה היא '+spoken+'.'};
+}
+const calendarDays=['יוֹם רִאשׁוֹן','יוֹם שֵׁנִי','יוֹם שְׁלִישִׁי','יוֹם רְבִיעִי','יוֹם חֲמִישִׁי','יוֹם שִׁשִּׁי','שַׁבָּת'];
+const calendarCases=[
+ {q:'כַּמָּה יָמִים יֵשׁ בְּשָׁבוּעַ?',a:'7',opts:['7','5','10','12'],say:'בשבוע יש שבעה ימים.',kind:'week'},
+ {q:'מָה הַיּוֹם אַחֲרֵי יוֹם שֵׁנִי?',a:'יוֹם שְׁלִישִׁי',opts:['יוֹם שְׁלִישִׁי','יוֹם רִאשׁוֹן','יוֹם חֲמִישִׁי','שַׁבָּת'],say:'אחרי יום שני מגיע יום שלישי.',kind:'week'},
+ {q:'כַּמָּה שָׁעוֹת יֵשׁ בְּיָמְמָה?',a:'24',opts:['24','12','60','7'],say:'ביממה יש עשרים וארבע שעות.',kind:'day'},
+ {q:'כַּמָּה דַּקּוֹת יֵשׁ בְּשָׁעָה?',a:'60',opts:['60','30','24','100'],say:'בשעה יש שישים דקות.',kind:'minute'},
+ {q:'כַּמָּה חֳדָשִׁים יֵשׁ בְּשָׁנָה?',a:'12',opts:['12','10','7','30'],say:'בשנה יש שנים עשר חודשים.',kind:'months'},
+ {q:'כַּמָּה יָמִים יֵשׁ בְּחֹדֶשׁ?',a:'28, 29, 30 אוֹ 31',opts:['28, 29, 30 אוֹ 31','תָּמִיד 30','תָּמִיד 31','7'],say:'בחודשים שונים יש מספר ימים שונה. בדרך כלל עשרים ושמונה, עשרים ותשעה, שלושים או שלושים ואחד.',kind:'months'},
+ {q:'כַּמָּה יָמִים יֵשׁ בְּשָׁנָה רְגִילָה?',a:'365',opts:['365','366','360','300'],say:'בשנה רגילה יש שלוש מאות שישים וחמישה ימים.',kind:'year'},
+ {q:'מָה הַיּוֹם שֶׁלִּפְנֵי שַׁבָּת?',a:'יוֹם שִׁשִּׁי',opts:['יוֹם שִׁשִּׁי','יוֹם רִאשׁוֹן','יוֹם שְׁלִישִׁי','יוֹם רְבִיעִי'],say:'לפני שבת מגיע יום שישי.',kind:'week'}
+];
+function makeCalendarQuestion(){const c=calendarCases[round%calendarCases.length];return {visual:'calendar',kind:c.kind,prompt:c.q,spoken:c.q,answers:shuffle(c.opts).map(x=>({label:x,value:x})),correct:c.a,explain:c.say}}
+function drawCalendarQuestion(v,q){const box=document.createElement('div');box.className='calendar-visual';if(q.kind==='week'){calendarDays.forEach((day,i)=>{const el=document.createElement('span');el.textContent=day;el.className='calendar-day';box.append(el)})}else if(q.kind==='day'){box.textContent='🌅 00:00   →   ☀️ 12:00   →   🌙 24:00'}else if(q.kind==='minute'){box.append(clockSVG(12,0));}else if(q.kind==='months'){box.textContent='📅  יָנוּאָר  •  פֶבְּרוּאָר  •  מַרְץ  •  אַפְּרִיל  •  מַאי  •  יוּנִי  •  יוּלִי  •  אוֹגוּסְט  •  סֶפְּטֶמְבֶּר  •  אוֹקְטוֹבֶּר  •  נוֹבֶמְבֶּר  •  דֵּצֶמְבֶּר'}else{box.textContent='🌍 ☀️ 🌱 🌻 🍂 ❄️'}v.append(box)}
+
+function drawClockQuestion(v,q){
+ const wrap=document.createElement('div');wrap.style.cssText='display:flex;flex-direction:column;align-items:center;gap:8px';
+ if(q.visual!=='digital-only')wrap.append(clockSVG(q.h,q.m));
+ if(q.digital){const d=document.createElement('div');d.style.cssText='font-size:48px;font-weight:900;direction:ltr;background:#1e293b;color:#86efac;padding:7px 24px;border-radius:17px;font-variant-numeric:tabular-nums';d.textContent=q.digital;wrap.append(d)}
+ v.append(wrap)
+}
+
+const extraTopics={
+ singular:[['🍎','תפוח','תפוחים','🍎🍎🍎'],['🐱','חתול','חתולים','🐱🐱'],['📚','ספר','ספרים','📚📚'],['🌸','פרח','פרחים','🌸🌸'],['👧','ילדה','ילדות','👧👧']],
+ gender:[['👦','ילד','ילדה','👧'],['👨‍🏫','מורה','מורה','👩‍🏫'],['🐶','כלב','כלבה','🐕'],['👑','מלך','מלכה','👸'],['🧑‍🎨','צייר','ציירת','👩‍🎨']],
+ englishWords:[['🐱','CAT','חתול',''],['🐶','DOG','כלב',''],['☀️','SUN','שמש',''],['📖','BOOK','ספר',''],['🍎','APPLE','תפוח',''],['🏠','HOUSE','בית',''],['🌳','TREE','עץ',''],['🚗','CAR','מכונית','']],
+ categories:[['🎸','כלי נגינה',['חליל','גיטרה','פסנתר'],'מקרר'],['🦁','בעלי חיים',['אריה','דולפין','נשר'],'כיסא'],['🚆','כלי תחבורה',['רכבת','ספינה','מטוס'],'תפוח'],['🧰','כלי עבודה',['פטיש','מברג','מסור'],'כובע'],['🪐','גרמי שמיים',['כוכב','ירח','כוכב לכת'],'מזלג'],['🏞️','צורות נוף',['הר','עמק','נהר'],'כרית'],['🩺','מקצועות',['רופאה','אדריכל','טייסת'],'ארון'],['🎻','כלי נגינה',['כינור','תוף','חצוצרה'],'אופניים']]
+};
+const englishABC=[['A','אֵיי','APPLE 🍎'],['B','בִּי','BALL ⚽'],['C','סִי','CAT 🐱'],['D','דִי','DOG 🐶'],['E','אִי','EGG 🥚'],['F','אֶף','FISH 🐟'],['G','גִ׳י','GIFT 🎁'],['H','אֵייץ׳','HOUSE 🏠'],['I','אַיי','ICE 🧊'],['J','גֵ׳יי','JUICE 🧃'],['K','קֵיי','KITE 🪁'],['L','אֶל','LION 🦁'],['M','אֶם','MOON 🌙'],['N','אֶן','NOSE 👃'],['O','אוֹ','ORANGE 🍊'],['P','פִּי','PEN 🖊️'],['Q','קְיוּ','QUEEN 👑'],['R','אָר','RAIN 🌧️'],['S','אֶס','SUN ☀️'],['T','טִי','TREE 🌳'],['U','יוּ','UMBRELLA ☂️'],['V','וִי','VAN 🚐'],['W','דַבְּל יוּ','WATER 💧'],['X','אֶקְס','BOX 📦'],['Y','וַויי','YELLOW 💛'],['Z','זִי','ZEBRA 🦓']];
+const gregorianNames=['ינואר','פברואר','מרץ','אפריל','מאי','יוני','יולי','אוגוסט','ספטמבר','אוקטובר','נובמבר','דצמבר'];
+const hebrewNames=['תשרי','חשוון','כסלו','טבת','שבט','אדר','ניסן','אייר','סיוון','תמוז','אב','אלול'];
+function extraQuestion(m){
+ const i=round;
+ if(m==='singular'||m==='gender'){
+ const row=extraTopics[m][i%extraTopics[m].length],many=m==='singular';const target=row[many?2:2];const alternatives=shuffle(extraTopics[m].map(x=>x[2]).filter(x=>x!==target));const options=shuffle([target,...alternatives.slice(0,3)]);return{visual:'picture',emoji:row[0],prompt:many?'איך אומרים כשיש כמה?':'מהי צורת הנקבה?',spoken:(many?'איך אומרים '+row[1]+' ברבים?':'איך אומרים '+row[1]+' בנקבה?'),answers:options.map(x=>({label:x,value:x})),correct:target,explain:row[1]+' — '+target+'.'}
+ }
+ if(m==='addition'||m==='multiply'){
+ let a,b,correct,sign,spoken;
+ if(m==='addition'){a=2+i%7;b=1+i%4;const subtract=i%2===1;sign=subtract?'−':'+';correct=subtract?a-b:a+b;if(correct<0){a=b+2;correct=2}spoken=subtract?'כמה נשאר?':'כמה יש ביחד?'}
+ else{a=2+i%4;b=2+i%3;const divide=i%2===1;sign=divide?'÷':'×';correct=divide?b:a*b;if(divide)a=a*b;spoken=divide?'מחלקים לקבוצות שוות. כמה בכל קבוצה?':'כמה פריטים יש בכל הקבוצות יחד?'}
+ const values=shuffle([...new Set([correct,correct+1,correct+2,Math.max(0,correct-1),Math.max(0,correct-2)])]).slice(0,4);if(!values.includes(correct))values[0]=correct;
+ return{visual:'math-extra',a,b,sign,prompt:`כמה זה ${a} ${sign} ${b}?`,spoken,answers:shuffle(values).map(x=>({label:String(x),value:x})),correct,explain:`${a} ${sign} ${b} שווה ${correct}.`}
+ }
+ if(m==='englishLetters'){const row=englishABC[i%englishABC.length];const options=shuffle([row[0],...shuffle(englishABC.filter(x=>x!==row)).slice(0,3).map(x=>x[0])]);return{visual:'picture',emoji:row[2],prompt:'איזו אות פותחת את המילה?',spoken:'באנגלית, '+row[2].replace(/[^A-Z ]/g,'')+'. באיזו אות היא מתחילה?',answers:options.map(x=>({label:x,value:x})),correct:row[0],explain:'האות היא '+row[1]+'.'}}
+ if(m==='englishWords'){const row=extraTopics.englishWords[i%extraTopics.englishWords.length];const opts=shuffle([row[1],...shuffle(extraTopics.englishWords.filter(x=>x!==row)).slice(0,3).map(x=>x[1])]);return{visual:'picture',emoji:row[0],prompt:'מה המילה באנגלית?',spoken:'איזו מילה באנגלית מתאימה לתמונה? '+row[2],answers:opts.map(x=>({label:x,value:x})),correct:row[1],explain:row[1]+' פירושו '+row[2]+'.'}}
+ if(m==='categories'){const row=extraTopics.categories[i%extraTopics.categories.length];const correct=row[2][i%3];return{visual:'picture',emoji:row[0],prompt:'מה שייך לקבוצה: '+row[1]+'?',spoken:'איזו מילה שייכת לקבוצה '+row[1]+'?',answers:shuffle([correct,row[3],...shuffle(extraTopics.categories.filter(x=>x!==row)).slice(0,2).map(x=>x[2][0])]).map(x=>({label:x,value:x})),correct,explain:correct+' שייך לקבוצה '+row[1]+'.'}}
+ if(m==='gregorian'||m==='hebrewMonths'){const names=m==='gregorian'?gregorianNames:hebrewNames;const j=i%names.length;const correct=names[(j+1)%12];const opts=shuffle([correct,...shuffle(names.filter(x=>x!==correct)).slice(0,3)]);return{visual:'month-extra',month:names[j],prompt:'איזה חודש בא אחרי '+names[j]+'?',spoken:'איזה חודש מגיע אחרי '+names[j]+'?',answers:opts.map(x=>({label:x,value:x})),correct,explain:'אחרי '+names[j]+' מגיע '+correct+'.'}}
+ return null;
+}
+
+const lessonData={clock:[
+["clock:7:0::","מַכִּירִים שָׁעוֹן","הַמָּחוֹג הַקָּצָר מַרְאֶה שָׁעוֹת. הָאָרֹךְ מַרְאֶה דַּקּוֹת.","המחוג הקצר מראה שעות. הארוך מראה דקות."],
+["clock:12:0::","60 דַּקּוֹת בְּשָׁעָה","בְּכָל שָׁעָה יֵשׁ 60 דַּקּוֹת. הַמָּחוֹג הָאָרֹךְ מַשְׁלִים סִבּוּב שָׁלֵם.","בשעה אחת יש שישים דקות. המחוג הארוך עושה סיבוב שלם."],
+["clock:5:0:05:00:","שָׁעָה עֲגֻלָּה","כְּשֶׁהַמָּחוֹג הָאָרֹךְ עַל 12, הַדַּקּוֹת הֵן 00.","כשהמחוג הארוך על שתים עשרה, זו שעה עגולה."],
+["clock:10:5:10:05:","חָמֵשׁ דַּקּוֹת","כְּשֶׁהַמָּחוֹג הָאָרֹךְ עַל 1, עָבְרוּ 5 דַּקּוֹת.","כשהמחוג הארוך על אחת, עברו חמש דקות."],
+["clock:4:10:04:10:","עֶשֶׂר דַּקּוֹת","כְּשֶׁהַמָּחוֹג הָאָרֹךְ עַל 2, עָבְרוּ 10 דַּקּוֹת.","כשהמחוג הארוך על שתיים, עברו עשר דקות."],
+["clock:2:15:02:15:","וָרֶבַע","15 דַּקּוֹת הֵן רֶבַע שָׁעָה. הַמָּחוֹג הָאָרֹךְ עַל 3.","חמש עשרה דקות הן רבע שעה. השעה שתיים ורבע."],
+["clock:7:30:07:30:","וָחֵצִי","30 דַּקּוֹת הֵן חֲצִי שָׁעָה. הַמָּחוֹג הָאָרֹךְ עַל 6.","שלושים דקות הן חצי שעה. השעה שבע וחצי."],
+["clock:8:45:08:45:","רֶבַע לְ","45 דַּקּוֹת עָבְרוּ. נִשְׁאֲרוּ 15 דַּקּוֹת לַשָּׁעָה הַבָּאָה.","השעה שמונה ארבעים וחמש. אפשר לומר גם רבע לתשע."],
+["clock:6:50:06:50:","עוֹד עֶשֶׂר דַּקּוֹת","בְּ־06:50 נִשְׁאֲרוּ 10 דַּקּוֹת לְשֶׁבַע.","בשש וחמישים נשארו עשר דקות לשבע."],
+["clock:10:5:10:05:","שָׁעוֹן דִּיגִיטָלִי","הַסְּפָרוֹת לִפְנֵי הַנְּקֻדּוֹת מַרְאוֹת שָׁעוֹת. אַחֲרֵיהֶן — דַּקּוֹת.","בשעה עשר וחמש דקות, עשר היא השעה וחמש הן הדקות."],
+["clock:7:0:19:00:","בֹּקֶר וְעֶרֶב","07:00 הִיא שֶׁבַע בַּבֹּקֶר. 19:00 הִיא שֶׁבַע בָּעֶרֶב.","שבע בבוקר נכתבת אפס שבע אפס אפס. שבע בערב נכתבת תשע עשרה אפס אפס."],
+["clock:3:0:03:00:animate","הַמְּחוֹגִים זָזִים","כְּשֶׁהַדַּקּוֹת מִתְקַדְּמוֹת, גַּם מְחוֹג הַשָּׁעוֹת זָז לְאַט.","המחוג הארוך זז מהר יותר מהקצר. לחצו על הפעל כדי לראות."],
+["clock:12:0::animate","סִבּוּב שָׁלֵם","הַמָּחוֹג הָאָרֹךְ יוֹצֵא מִ־12 וְחוֹזֵר לְ־12. עָבְרָה שָׁעָה שְׁלֵמָה.","המחוג הארוך יוצא משתים עשרה, מקיף את השעון וחוזר לשתים עשרה. כך עוברות שישים דקות, כלומר שעה אחת."],
+["clock:3:0::animate","מָה קוֹרֶה לַמָּחוֹג הַקָּצָר?","בְּסִבּוּב שָׁלֵם שֶׁל מְחוֹג הַדַּקּוֹת, מְחוֹג הַשָּׁעוֹת מִתְקַדֵּם מִסְפָּרָה אַחַת לַבָּאָה.","בזמן שהמחוג הארוך עושה סיבוב שלם, המחוג הקצר מתקדם משעה אחת לשעה הבאה. הוא לא קופץ בבת אחת."],
+["clock:4:15:04:15:","רֶבַע סִבּוּב","מֵ־12 עַד 3 עָבְרוּ 15 דַּקּוֹת. זֶה רֶבַע מֵהַשָּׁעָה.","כשהמחוג הארוך מתקדם משתים עשרה לשלוש, הוא עובר רבע סיבוב. עברו חמש עשרה דקות."],
+["clock:4:30:04:30:","חֲצִי סִבּוּב","מֵ־12 עַד 6 עָבְרוּ 30 דַּקּוֹת. הַמָּחוֹג הַקָּצָר כְּבָר בֵּין 4 לְ־5.","המחוג הארוך הגיע לשש. עברו שלושים דקות, חצי שעה. שימו לב שהמחוג הקצר כבר נמצא בין ארבע לחמש."],
+["clock:4:45:04:45:","שְׁלוֹשָׁה רִבְעֵי סִבּוּב","מֵ־12 עַד 9 עָבְרוּ 45 דַּקּוֹת. נִשְׁאַר רֶבַע סִבּוּב לַשָּׁעָה הַבָּאָה.","המחוג הארוך הגיע לתשע. עברו ארבעים וחמש דקות. עוד רבע שעה תתחיל השעה הבאה."],
+["clock:2:25:02:25:","סוֹפְרִים בְּקְפִיצוֹת שֶׁל 5","כָּל סִפְרָה מוֹסִיפָה 5 דַּקּוֹת: 5, 10, 15, 20, 25.","נספור בחמישיות. אחת, חמש דקות. שתיים, עשר דקות. שלוש, חמש עשרה. ארבע, עשרים. חמש, עשרים וחמש דקות."],
+],calendar:[
+["📅", "שִׁבְעַת יְמֵי הַשָּׁבוּעַ", "בְּשָׁבוּעַ יֵשׁ 7 יָמִים.", "בשבוע יש שבעה ימים."],
+["📆", "יְמֵי הַשָּׁבוּעַ", "רִאשׁוֹן, שֵׁנִי, שְׁלִישִׁי, רְבִיעִי, חֲמִישִׁי, שִׁשִּׁי וְשַׁבָּת.", "ימי השבוע הם ראשון, שני, שלישי, רביעי, חמישי, שישי ושבת."],
+["🌅", "יוֹם וְלַיְלָה", "בְּיָמְמָה יֵשׁ 24 שָׁעוֹת.", "ביממה אחת, כלומר ביום ובלילה יחד, יש עשרים וארבע שעות."],
+["🕒", "דַּקּוֹת וְשָׁעוֹת", "בְּשָׁעָה יֵשׁ 60 דַּקּוֹת.", "בשעה יש שישים דקות."],
+["📅", "יָמִים בְּחֹדֶשׁ", "בְּחֹדֶשׁ יֵשׁ בְּדֶרֶךְ כְּלָל 30 אוֹ 31 יָמִים. בְּפֶבְּרוּאָר יֵשׁ 28 אוֹ 29.", "בחודשים רבים יש שלושים או שלושים ואחד ימים. בפברואר יש עשרים ושמונה, ולפעמים עשרים ותשעה."],
+["🗓️", "חֳדָשִׁים בְּשָׁנָה", "בְּשָׁנָה יֵשׁ 12 חֳדָשִׁים.", "בשנה יש שנים עשר חודשים."],
+["🌍", "יָמִים בְּשָׁנָה", "בְּשָׁנָה רְגִילָה יֵשׁ 365 יָמִים. בְּשָׁנָה מְעֻבֶּרֶת בַּלּוּחַ הַלּוֹעֲזִי — 366.", "בשנה רגילה יש שלוש מאות שישים וחמישה ימים. בשנה מעוברת יש שלוש מאות שישים ושישה."],
+["🌻", "עוֹנוֹת הַשָּׁנָה", "אָבִיב, קַיִץ, סְתָו וָחֹרֶף — אַרְבַּע עוֹנוֹת.", "יש ארבע עונות בשנה. אביב, קיץ, סתיו וחורף."],
+],
+parity:[
+['👫 👫','מָהוּ זוּג?','זוּג הוּא שְׁנֵי חֲבֵרִים יַחַד.','זוג הוא שני חברים יחד.'],
+['🍎🍎 🍎🍎','מִסְפָּר זוּגִי','אַרְבָּעָה תַּפּוּחִים. כֻּלָּם בְּזוּגוֹת!','ארבעה תפוחים. כולם בזוגות. ארבע הוא מספר זוגי.'],
+['🍎🍎 🍎','מִסְפָּר אִי־זוּגִי','שְׁלוֹשָׁה תַּפּוּחִים. אֶחָד נִשְׁאַר לְבַד!','שלושה תפוחים. אחד נשאר לבד. שלוש הוא מספר אי זוגי.']],
+count:[
+['🐥 🐥 🐥','סוֹפְרִים יַחַד','נוֹגְעִים בְּכָל אֶפְרוֹחַ וְסוֹפְרִים.','בואו נספור כל אפרוח פעם אחת.'],
+['🍓 🍓 🍓 🍓','מִסְפָּר לְכָל כַּמּוּת','אַרְבַּע תּוּתִים. הַמִּסְפָּר הוּא 4.','יש ארבעה תותים. המספר הוא ארבע.'],
+['⭐ ⭐ ⭐ ⭐ ⭐','עַכְשָׁו תּוֹרְכֶם','סִפְרוּ אֶת הַכּוֹכָבִים!','כמה כוכבים יש? נסו לספור לבד.']],
+letters:[
+['🐟 ד','אוֹת פּוֹתַחַת','דָּג מַתְחִיל בָּאוֹת דָּלֶת.','דג מתחיל באות דלת.'],
+['🍎 ת','מַקְשִׁיבִים לַהַתְחָלָה','תַּפּוּחַ מַתְחִיל בָּאוֹת תָּו.','תפוח מתחיל באות תו.'],
+['🐱 ח','מְגַלִּים אֶת הָאוֹת','חָתוּל מַתְחִיל בָּאוֹת חֵית.','חתול מתחיל באות חית.']],
+vowels:[
+['בָּ','קָמָץ','הַקָּמָץ נִמְצָא מִתַּחַת לָאוֹת.','זה קמץ. שומעים את הצליל אה.'],
+['בִּ','חִירִיק','הַחִירִיק הוּא נְקֻדָּה מִתַּחַת לָאוֹת.','זה חיריק. שומעים את הצליל אי.'],
+['בֹּ','חוֹלָם','הַחוֹלָם הוּא נְקֻדָּה מֵעַל לָאוֹת.','זה חולם. שומעים את הצליל או.']],
+compare:[
+['🐘 🐭','מִי גָּדוֹל יוֹתֵר?','מְשַׁוִּים בֵּין שְׁתֵּי כַּמֻּיּוֹת.','בואו נשווה בין שתי כמויות.'],
+['🍎🍎🍎 🍐🍐','מִי יוֹתֵר?','שָׁלוֹשׁ גָּדוֹל מִשְּׁתַּיִם.','שלוש גדול משתיים.'],
+['8️⃣ 3️⃣','בּוֹחֲרִים אֶת הַגָּדוֹל','שְׁמוֹנֶה גָּדוֹל מִשָּׁלוֹשׁ.','שמונה גדול משלוש.']],
+missing:[
+['1️⃣ 2️⃣ 3️⃣','מִסְפָּרִים בְּסֵדֶר','כָּל מִסְפָּר בָּא אַחֲרֵי הַקּוֹדֵם.','אחת שתיים שלוש. המספרים מסודרים.'],
+['3️⃣ ❓ 5️⃣','מָה חָסֵר?','בֵּין שָׁלוֹשׁ לְחָמֵשׁ בָּא אַרְבַּע.','בין שלוש לחמש בא ארבע.'],
+['6️⃣ 7️⃣ ❓','מַמְשִׁיכִים אֶת הַסְּדָרָה','מְגַלִּים מָה בָּא אַחַר כָּךְ.','שש שבע. מה המספר הבא?']],
+build:[
+['🐟 דָּג','מִלָּה מֵאוֹתִיּוֹת','הַמִּלָּה דָּג מֻרְכֶּבֶת מֵהָאוֹתִיּוֹת דָּלֶת וְגִימֶל.','המילה דג מורכבת מהאותיות דלת וגימל.'],
+['🐱 חָתוּל','סֵדֶר הָאוֹתִיּוֹת','לְכָל אוֹת יֵשׁ מָקוֹם בַּמִּלָּה.','בונים מילה מההתחלה ועד הסוף.'],
+['🧩 🔤','בּוֹנִים בְּעַצְמֵנוּ','לוֹחֲצִים עַל אוֹתִיּוֹת לְפִי הַסֵּדֶר.','לחצו על האותיות לפי הסדר כדי לבנות מילה.']],
+match:[
+['אָ אִ אוֹ','לְכָל נִקּוּד צְלִיל','מַקְשִׁיבִים לַצְּלִיל וּמְחַפְּשִׂים אֶת הַסִּימָן.','לכל סימן ניקוד יש צליל.'],
+['בָ בִ בֹ','מַבְחִינִים בַּנִּקּוּד','אוֹתָהּ אוֹת, נִקּוּד שׁוֹנֶה.','אותה אות נשמעת אחרת עם ניקוד אחר.'],
+['👂 🧩','מַתְאִימִים','מַקְשִׁיבִים וּבוֹחֲרִים אֶת הַצְּלִיל הַמַּתְאִים.','הקשיבו ובחרו את הניקוד המתאים.']],
+memory:[
+['🃏 🃏 🃏','זוֹכְרִים מְקוֹמוֹת','הוֹפְכִים שְׁנֵי קְלָפִים בְּכָל תּוֹר.','בכל תור הופכים שני קלפים.'],
+['🐟 דָּג','מְחַפְּשִׂים זוּגוֹת','מְחַבְּרִים תְּמוּנָה לַמִּלָּה שֶׁלָּהּ.','מחפשים תמונה ומילה מתאימות.'],
+['🧠 ⭐','מִתְאַמְּנִים בַּזִּכָּרוֹן','זוֹכְרִים אֵיפֹה נִמְצָא כָּל קְלָף.','נסו לזכור איפה נמצא כל קלף.']]
+};
+
+Object.assign(lessonData,{
+ singular:[['🍎','אחד או כמה?','תפוח אחד. שני תפוחים. כשיש כמה, משתמשים בצורת רבים.','תפוח אחד. שני תפוחים.'],['🐱','מוסיפים ים','חתול אחד. חתולים רבים. לפעמים מוסיפים ים.','חתול אחד. חתולים רבים.'],['🌸','לפעמים מוסיפים ות','פרח אחד, פרחים רבים. ילדה אחת, ילדות רבות.','פרח, פרחים. ילדה, ילדות.'],['📚','מתרגלים','מקשיבים למילה ביחיד ומוצאים את צורת הרבים.','עכשיו בואו נתרגל יחיד ורבים.']],
+ gender:[['👦 👧','זכר ונקבה','ילד וילדה. אלו שתי צורות של מילים בעברית.','ילד. ילדה.'],['👑','מלך ומלכה','לפעמים מוסיפים ה בסוף: מלך, מלכה.','מלך. מלכה.'],['🐶','כלב וכלבה','יש מילים עם צורת זכר וצורת נקבה.','כלב. כלבה.'],['🧩','בוחרים צורה מתאימה','נקשיב למילה ונחפש את צורת הנקבה.','מוכנים לתרגל?']],
+ addition:[['🍎 🍎','מחברים','שני תפוחים ועוד תפוח אחד הם שלושה תפוחים.','שתיים ועוד אחת שווה שלוש.'],['⭐ ⭐ ⭐','מוסיפים','כשמחברים, מוסיפים פריטים לקבוצה.','חיבור אומר להוסיף.'],['🍬','מחסרים','יש ארבע סוכריות. לוקחים אחת. נשארות שלוש.','ארבע פחות אחת שווה שלוש.'],['➕ ➖','מנסים בעצמנו','נשתמש בציורים כדי לחשב.','בואו נתרגל חיבור וחיסור.']],
+ multiply:[['🍎🍎 🍎🍎','קבוצות שוות','שתי קבוצות. בכל קבוצה שני תפוחים. ביחד ארבעה.','שתי קבוצות של שניים הן ארבעה.'],['✖️','כפל הוא חיבור חוזר','שתיים ועוד שתיים ועוד שתיים שווה שש. זה שלוש כפול שתיים.','שלוש פעמים שתיים שווה שש.'],['🍪🍪🍪🍪','מחלקים שווה בשווה','ארבע עוגיות לשני ילדים. כל ילד מקבל שתיים.','ארבע לחלק לשתיים שווה שתיים.'],['➗','מתרגלים','נפתור בעזרת קבוצות שוות.','בואו נתרגל קבוצות וחלוקה.']],
+ englishLetters:englishABC.map(x=>[x[2],x[0]+' · '+x[1],'זוהי האות '+x[0]+'. לדוגמה: '+x[2]+'.','The letter '+x[0]+'. '+x[2].replace(/[^A-Z ]/g,'')+'.']),
+ englishWords:extraTopics.englishWords.map(x=>[x[0],x[1]+' — '+x[2],'באנגלית אומרים '+x[1]+'. בעברית: '+x[2]+'.',x[1]+'. '+x[2]+'.']),
+ categories:extraTopics.categories.map(x=>[x[0],x[1],x[2].join(' · ')+' — כולם שייכים לקבוצה '+x[1]+'.',x[2].join(', ')+'. כולם '+x[1]+'.']),
+ gregorian:gregorianNames.map((x,i)=>['📅',x,'חודש מספר '+(i+1)+' בשנה הלועזית.','חודש מספר '+(i+1)+': '+x+'.']),
+ hebrewMonths:hebrewNames.map((x,i)=>['🌙',x,'חודש '+(i+1)+' בסדר החודשים המתחיל בתשרי.','החודש '+x+'.'])
+});
+
+let lessonIndex=0,lessonMode='',lessonUtterance=null,lessonToken=0,lessonSpeech='';
+function lessonHighlight(i){document.querySelectorAll('#lessonSpeechWords .word').forEach((x,j)=>x.classList.toggle('active',j===i))}
+function lessonStop(){lessonToken++;if('speechSynthesis' in window)speechSynthesis.cancel();lessonHighlight(-1);$('lessonPause').textContent='⏸️'}
+function syncLessonVisual(i){const nodes=[...$('lessonArt').querySelectorAll('.sequence-item,.vowel-demo span,.day-card,.parity-item')];if(!nodes.length)return;nodes.forEach((n,j)=>n.classList.toggle('speech-active',i>=0&&j===Math.floor(i/2)%nodes.length))}
+function lessonSpeak(){
+ setNarration(lessonSpeech,'שִׁעוּר',false);lessonStop();if(!soundOn||!('speechSynthesis' in window))return;
+ const token=++lessonToken,u=new SpeechSynthesisUtterance(normalizeSpeech(lessonSpeech));lessonUtterance=u;
+ u.lang='he-IL';if(voice)u.voice=voice;u.rate=speechRate();
+ const words=[...document.querySelectorAll('#lessonSpeechWords .word')];
+ u.onboundary=e=>{if(token!==lessonToken)return;const i=words.findIndex((w,j)=>+w.dataset.start<=e.charIndex&&(j===words.length-1||+words[j+1].dataset.start>e.charIndex));lessonHighlight(i);syncLessonVisual(i)};
+ u.onend=()=>{if(token===lessonToken)lessonHighlight(-1);syncLessonVisual(-1)};
+ speechSynthesis.speak(u)
+}
+let clockAnimation=null;
+function stopClockAnimation(){if(clockAnimation){clearInterval(clockAnimation);clockAnimation=null}}
+function animateLessonClock(button){
+ stopClockAnimation();const svg=$('lessonArt').querySelector('svg');if(!svg)return;
+ const hands=[...svg.querySelectorAll('line')].slice(-2);
+ if(hands.length!==2)return;
+ let minute=0,steps=0;button.textContent='⏸️ עוֹצְרִים';
+ clockAnimation=setInterval(()=>{
+  minute=(minute+1)%60;steps++;
+  const angles=[(3+minute/60)*30,minute*6];const lengths=[65,91];
+  hands.forEach((line,i)=>{const a=angles[i]*Math.PI/180;line.setAttribute('x2',150+Math.sin(a)*lengths[i]);line.setAttribute('y2',150-Math.cos(a)*lengths[i])});
+  if(steps>=60){stopClockAnimation();button.textContent='🔄 הַפְעֵל שׁוּב'}
+ },100);
+ button.onclick=()=>{stopClockAnimation();button.textContent='▶️ הַפְעֵל אֶת הַשָּׁעוֹן';button.onclick=()=>animateLessonClock(button)};
+}
+
+// Illustrated, interactive scenes use vector-like CSS shapes and native elements;
+// no external images, fonts or network connection are required.
+const weekdayIcons=['☀️','🎒','📚','🎨','⚽','🧁','🕯️'];
+const weekdayNames=['ראשון','שני','שלישי','רביעי','חמישי','שישי','שבת'];
+function sceneNode(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e}
+function addSceneLabel(root,txt){root.append(sceneNode('div','scene-label',txt))}
+function createCalendarScene(index){
+ const root=sceneNode('div','scene calendar-scene');
+ if(index===0||index===1){
+  const strip=sceneNode('div','week-strip');let active=0;
+  const cards=weekdayNames.map((day,i)=>{
+   const card=sceneNode('button','day-card');card.type='button';card.setAttribute('aria-label','יום '+day);
+   card.append(sceneNode('span','day-emoji',weekdayIcons[i]),sceneNode('span','day-name',day));
+   card.onclick=()=>{active=i;update();speak('יום '+day)};strip.append(card);return card
+  });
+  const title=sceneNode('div','scene-label');
+  const update=()=>{cards.forEach((c,i)=>c.classList.toggle('active',i===active));title.textContent='יוֹם '+weekdayNames[active]};
+  root.append(strip,title);update();
+  const hint=sceneNode('div','tap-hint','👆 נוגעים ביום כדי לשמוע את שמו');root.append(hint);
+  let loop=0;const interval=setInterval(()=>{if(!root.isConnected){clearInterval(interval);return}if(lessonMode==='calendar'&&lessonIndex===index){active=(active+1)%7;update();if(++loop>20)clearInterval(interval)}},1800);
+ }else if(index===2){
+  const world=sceneNode('div','orbital');world.append(sceneNode('div','sun','☀️'),sceneNode('div','moon','🌙'),sceneNode('div','land'));
+  const status=sceneNode('div','scene-label','☀️ בֹּקֶר וְיוֹם');
+  const btn=sceneNode('button','scene-btn','🌙 עוֹבְרִים לַלַּיְלָה');btn.type='button';
+  btn.onclick=()=>{const night=world.classList.toggle('night');status.textContent=night?'🌙 עֶרֶב וְלַיְלָה':'☀️ בֹּקֶר וְיוֹם';btn.textContent=night?'☀️ חוֹזְרִים לַבֹּקֶר':'🌙 עוֹבְרִים לַלַּיְלָה';speak(night?'עכשיו לילה. גם בלילה הזמן עובר.':'עכשיו יום. ביממה יש יום ולילה.')};
+  root.append(world,status,btn);
+ }else if(index===3){
+  const row=sceneNode('div','stat-row');const stat=sceneNode('div','stat-bubble');stat.append(sceneNode('b','', '60'),sceneNode('span','', 'דַּקּוֹת בְּשָׁעָה'));row.append(stat);root.append(row);
+  const track=sceneNode('div','minute-track');for(let i=0;i<60;i++){const dot=sceneNode('i');dot.style.setProperty('--i',i);track.append(dot)}root.append(track);
+  addSceneLabel(root,'כָּל 5 דַּקּוֹת הֵן קְפִיצָה אַחַת בַּשָּׁעוֹן');
+ }else if(index===4){
+  const row=sceneNode('div','stat-row');for(const [num,label,icon] of [['30','ימים','🗓️'],['31','ימים','📅'],['28/29','פברואר','❄️']]){const stat=sceneNode('div','stat-bubble');stat.append(sceneNode('b','',num),sceneNode('span','',label));row.append(stat)}root.append(row);addSceneLabel(root,'לֹא בְּכָל חֹדֶשׁ אוֹתוֹ מִסְפַּר יָמִים');
+ }else if(index===5){
+  const grid=sceneNode('div','months-grid');const icons=['❄️','🌧️','🌼','🌷','🌻','☀️','🏖️','🍉','🍎','🍂','🌧️','🎄'];
+  const names=['ינואר','פברואר','מרץ','אפריל','מאי','יוני','יולי','אוגוסט','ספטמבר','אוקטובר','נובמבר','דצמבר'];
+  names.forEach((name,i)=>{const card=sceneNode('div','month-card');card.style.animationDelay=(i*.05)+'s';card.append(sceneNode('span','',icons[i]),sceneNode('b','',name));grid.append(card)});root.append(grid)
+ }else if(index===6){
+  const row=sceneNode('div','stat-row');for(const [num,label] of [['365','שָׁנָה רְגִילָה'],['366','שָׁנָה מְעֻבֶּרֶת']]){const stat=sceneNode('div','stat-bubble');stat.append(sceneNode('b','',num),sceneNode('span','',label));row.append(stat)}root.append(row);addSceneLabel(root,'🌍 שָׁנָה הִיא מַסָּע שֶׁל כַּדּוּר הָאָרֶץ סְבִיב הַשֶּׁמֶשׁ');
+ }else{
+  const seasons=sceneNode('div','seasons');[['🌸','אָבִיב'],['🏖️','קַיִץ'],['🍁','סְתָו'],['☃️','חֹרֶף']].forEach(([icon,name],i)=>{const c=sceneNode('div','season');c.style.animationDelay=(i*.12)+'s';c.append(sceneNode('span','',icon),sceneNode('b','',name));seasons.append(c)});root.append(seasons)
+ }
+ return root;
+}
+function createGeneralScene(slide,mode,index){
+ const root=sceneNode('div','scene');const picture=sceneNode('div','general-picture');
+ // Emoji clusters become individual animated items, not a tiny text line.
+ const chunks=Array.from(slide[0].matchAll(/\p{Extended_Pictographic}(?:\uFE0F|\u200D\p{Extended_Pictographic})*|[^\s]/gu),m=>m[0]);
+ const items=(['englishLetters','englishWords','categories','gregorian','hebrewMonths','singular','gender'].includes(mode))?[slide[0]]:(chunks.length>16?[slide[0]]:chunks);
+ items.forEach((item,i)=>{const el=sceneNode('span','unit',item);el.style.setProperty('--i',i);picture.append(el)});
+ root.append(picture);return root;
+}
+
+function createParityScene(index){
+ const root=sceneNode('div','scene parity-scene');
+ const count=index===0?2:index===1?4:3;
+ const board=sceneNode('div','parity-board');
+ for(let i=0;i<count;i++){
+  const item=sceneNode('div','parity-item'+(index===2&&i===2?' unmatched':''),'🍎');
+  item.style.setProperty('--i',i);
+  board.append(item);
+ }
+ const label=sceneNode('div','parity-caption',index===2?'שני תפוחים בזוג, ואחד נשאר לבד':index===1?'לכל תפוח יש בן זוג':'שני תפוחים הם זוג');
+ const replay=sceneNode('button','scene-btn parity-replay','▶ הַרְאֵה שׁוּב');
+ replay.type='button';replay.onclick=()=>{board.classList.remove('animate');void board.offsetWidth;board.classList.add('animate');};
+ root.append(board,label,replay);
+ requestAnimationFrame(()=>board.classList.add('animate'));
+ return root;
+}
+function lessonSlide(){
+ stopClockAnimation();lessonStop();const slides=lessonData[lessonMode],slide=slides[lessonIndex];
+ $('lessonArt').replaceChildren();
+ if(lessonMode==='clock'){
+  const match=/^clock:(\d+):(\d+):([^:]*):(.*)$/.exec(slide[0]);
+  const h=Number(match[1]),m=Number(match[2]),digital=match[3],animate=match[4]==='animate';
+  const lessonClock=clockSVG(h,m);lessonClock.classList.add('lesson-clock');$('lessonArt').append(lessonClock);
+  if(digital){const d=document.createElement('div');d.className='lesson-digital';d.dir='ltr';d.textContent=digital;$('lessonArt').append(d)}
+  if(animate){const b=document.createElement('button');b.type='button';b.className='clock-animate';b.textContent='▶️ הַפְעֵל אֶת הַשָּׁעוֹן';b.onclick=()=>animateLessonClock(b);$('lessonArt').append(b)}
+ }else if(lessonMode==='calendar'){
+  $('lessonArt').append(createCalendarScene(lessonIndex));
+ }else if(lessonMode==='parity'){
+  $('lessonArt').append(createParityScene(lessonIndex));
+ }else if(lessonMode==='missing'&&lessonIndex===0){const box=document.createElement('div');box.className='sequence-scene';['1','2','3'].forEach((n,i)=>{const e=document.createElement('span');e.className='sequence-item';e.style.setProperty('--step',i);e.textContent=n;box.append(e)});$('lessonArt').append(box)}else if(lessonMode==='vowels'){const box=document.createElement('div');box.className='vowel-demo';const glyph=slide[0];const e=document.createElement('span');e.textContent=glyph;e.style.setProperty('--step',0);box.append(e);$('lessonArt').append(box)}else{$('lessonArt').append(createGeneralScene(slide,lessonMode,lessonIndex))}
+ $('lessonTitle').textContent=slide[1];$('lessonText').textContent=slide[2];lessonSpeech=slide[3];
+ $('lessonFill').style.width=((lessonIndex+1)/slides.length*100)+'%';
+ $('lessonDots').textContent=slides.map((_,i)=>i===lessonIndex?'●':'○').join(' ');
+ $('lessonPrev').disabled=lessonIndex===0;$('lessonNext').textContent=lessonIndex===slides.length-1?'🎮 מְשַׂחֲקִים!':'הַבָּא ⬅';
+ const panel=$('lessonSpeechWords');panel.replaceChildren();for(const m of lessonSpeech.matchAll(/\S+/g)){const span=document.createElement('span');span.className='word';span.dataset.start=m.index;span.textContent=m[0];panel.append(span)}
+ lessonSpeak();savePosition('lesson');
+}
+function openLesson(m){if(!childName){$('childName').focus();$('profileMsg').textContent='קֹדֶם נִכְתֹּב אֶת הַשֵּׁם שֶׁלָּךְ.';return}stopSpeech();lessonMode=m;lessonIndex=0;$('home').classList.add('hidden');$('game').classList.add('hidden');$('lesson').classList.remove('hidden');$('lessonSubject').textContent=modes[m];lessonSlide();window.scrollTo(0,0)}
+function beginGame(){stopClockAnimation();lessonStop();$('lesson').classList.add('hidden');start(lessonMode)}
+$('lessonNext').onclick=()=>{if(lessonIndex+1>=lessonData[lessonMode].length)beginGame();else{lessonIndex++;lessonSlide()}};
+$('lessonPrev').onclick=()=>{if(lessonIndex>0){lessonIndex--;lessonSlide()}};
+$('skipLesson').onclick=beginGame;
+$('lessonHome').onclick=()=>{stopClockAnimation();lessonStop();$('lesson').classList.add('hidden');home()};
+$('lessonPlay').onclick=()=>{if('speechSynthesis' in window&&speechSynthesis.paused)speechSynthesis.resume();else{lessonSpeech=lessonData[lessonMode]?.[lessonIndex]?.[3]||$('lessonText').textContent;lessonSpeak()}};
+$('lessonPause').onclick=()=>{if(!('speechSynthesis' in window))return;if(speechSynthesis.paused)speechSynthesis.resume();else if(speechSynthesis.speaking)speechSynthesis.pause()};
+$('lessonRestart').onclick=lessonSpeak;
+
+const guideKey='kita_alef_guide_seen_v1';
+let guideTimer=null,guideTarget=null;
+function clearGuide(){
+ if(guideTarget)guideTarget.classList.remove('guide-glow');
+ guideTarget=null;$('guidePointer').style.display='none';
+ if(guideTimer){clearTimeout(guideTimer);guideTimer=null}
+}
+function pointAt(element){
+ clearGuide();if(!element)return;
+ guideTarget=element;element.classList.add('guide-glow');
+ const r=element.getBoundingClientRect(),pointer=$('guidePointer');
+ pointer.style.display='block';pointer.style.left=Math.max(15,r.left+r.width*.55)+'px';pointer.style.top=Math.max(15,r.top+r.height*.2)+'px';
+}
+function showFirstLessonGuide(){
+ let seen=false;try{seen=localStorage.getItem(guideKey)==='yes'}catch(e){}
+ if(seen||lessonIndex!==0)return;
+ $('lessonGuide').hidden=true;
+ guideTimer=setTimeout(()=>{
+  pointAt($('lessonNext'));
+  lessonStop();
+  speak(personal(gendered('כדי להמשיך ללמוד, לחץ על הכפתור הסגול הבא. תראו את האצבע שמצביעה עליו. אפשר ללחוץ על הרמקול כדי לשמוע שוב.','כדי להמשיך ללמוד, לחצי על הכפתור הסגול הבא. תראי את האצבע שמצביעה עליו. אפשר ללחוץ על הרמקול כדי לשמוע שוב.')));
+ },1600);
+}
+function markGuideSeen(){
+ clearGuide();$('lessonGuide').hidden=true;
+ try{localStorage.setItem(guideKey,'yes')}catch(e){}
+}
+function attachMenuAudio(){
+ document.querySelectorAll('[data-mode]').forEach(tile=>{
+  if(tile.querySelector('.menu-voice'))return;
+  const btn=document.createElement('button');btn.type='button';btn.className='menu-voice';btn.textContent='🔊';
+  const label=tile.querySelector('strong')?.textContent||modes[tile.dataset.mode];
+  const desc=tile.querySelector('small')?.textContent||'';
+  btn.setAttribute('aria-label','הקרא את שם המשחק '+label);
+  btn.onclick=e=>{e.preventDefault();e.stopPropagation();clearGuide();speak(personal(label+'. '+desc+'. כדי להתחיל, לחצו על המשחק.'))};
+  tile.append(btn)
+ })
+}
+attachMenuAudio();
+document.querySelectorAll('[data-mode]').forEach(tile=>tile.addEventListener('keydown',e=>{if(e.target!==tile)return;if(e.key==='Enter'||e.key===' '){e.preventDefault();openLesson(tile.dataset.mode)}}));
+$('lessonHelp').onclick=()=>{pointAt($('lessonNext'));speak(personal('כדי לעבור לשקופית הבאה, לחצו על הכפתור הסגול הבא. כדי לשמוע שוב, לחצו על החץ המעגלי.'))};
+const originalLessonNext=$('lessonNext').onclick;
+$('lessonNext').onclick=()=>{markGuideSeen();originalLessonNext()};
+const oldLessonSlide=lessonSlide;
+lessonSlide=function(){oldLessonSlide();if(lessonIndex===0)showFirstLessonGuide();else markGuideSeen()};
+const oldHome=home;
+home=function(){clearGuide();oldHome();};
+const oldOpenLesson=openLesson;
+openLesson=function(m){clearGuide();oldOpenLesson(m)};
+$('saveChild').addEventListener('click',()=>{if(childName)speak(personal('לחצו על הרמקול כדי לשמוע על המשחק. אחר כך בחרו משחק.'))});
+$('resumeChild').insertAdjacentHTML('afterend','<button id="resumeAudio" class="help-voice" type="button">🔊 הַשְׁמַעַת הֶמְשֵׁךְ</button>');
+$('resumeAudio').onclick=()=>speak(personal('יש לכם שיעור שלא הסתיים. לחצו על הכפתור הירוק עם המשולש כדי להמשיך בדיוק מהמקום שבו הפסקתם.'));
+$('newChild').insertAdjacentHTML('afterend','<button id="changeAudio" class="help-voice" type="button">🔊 עֶזְרָה בַּשֵּׁם</button>');
+$('changeAudio').onclick=()=>speak('אפשר לבקש ממבוגר לכתוב את השם שלך. אחר כך לוחצים על הכפתור הסגול ומתחילים לשחק.');
+
+// All ten topics remain visible on a single full-screen menu.
+// No paging controls or hidden topic cards.
+// The three local buttons are the only visible narration controls.
+// Keep the old global narrator in the DOM for compatibility with older callbacks.
+// Make the repeat button in the header consistent with the same narration.
+$('repeat').onclick=()=>{if(question)speak(personal(question.spoken||question.prompt))};
+// Only a single guidance cue should be visible at once.
+const oldMarkGuideSeen=markGuideSeen;
+markGuideSeen=function(){oldMarkGuideSeen();};
+
+$('globalHome').onclick=()=>{clearGuide();lessonStop();home()};
+const adultPanel=$('profileBox');
+function showAdult(){stopSpeech();adultPanel.classList.add('adult-open');$('adultOpen').setAttribute('aria-expanded','true')}
+function hideAdult(){adultPanel.classList.remove('adult-open');$('adultOpen').setAttribute('aria-expanded','false')}
+$('adultOpen').onclick=showAdult;
+$('adultClose').onclick=hideAdult;
+adultPanel.addEventListener('click',e=>{if(e.target===adultPanel)hideAdult()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')hideAdult()});
+// First-time adult setup; child menu remains clean on later launches.
+if(!childName)showAdult();
+const oldSetChild=setChild;
+setChild=function(name){const ok=oldSetChild(name);if(ok)hideAdult();return ok};
+const oldOpenLessonForAdult=openLesson;
+openLesson=function(m){if(!childName){showAdult();$('childName').focus();return}oldOpenLessonForAdult(m)};
+const oldResumeForAdult=resumeProgress;
+resumeProgress=function(){hideAdult();oldResumeForAdult()};
+
+// Parent analytics: store one compact answer record per evaluated question.
+const ANALYTICS_LIMIT=1200;
+let analyticsSessionId=null, analyticsStartedAt=null;
+function beginAnalyticsSession(){analyticsStartedAt=Date.now();analyticsSessionId='s'+analyticsStartedAt+'-'+Math.random().toString(36).slice(2,7)}
+function currentAnalyticsProfile(){return childName?profile():null}
+function answerLabel(q,v){const a=(q?.answers||[]).find(x=>String(x.value)===String(v));return a?.sub?`${a.label} (${a.sub})`:a?.label||String(v??'לא נבחר')}
+function recordAnswer(ok,chosen,expected,kind='choice',extra=''){
+ const p=currentAnalyticsProfile();if(!p||!mode)return;
+ if(!Array.isArray(p.answerHistory))p.answerHistory=[];
+ if(!analyticsSessionId)beginAnalyticsSession();
+ const q=question||{};
+ const record={id:Date.now()+'-'+Math.random().toString(36).slice(2,6),time:Date.now(),session:analyticsSessionId,mode,round:round+1,ok:!!ok,kind,
+  prompt:String(q.prompt||modes[mode]||'').slice(0,180),chosen:String(chosen??'').slice(0,110),expected:String(expected??'').slice(0,110),detail:String(extra||q.explain||'').slice(0,200)};
+ p.answerHistory.push(record);if(p.answerHistory.length>ANALYTICS_LIMIT)p.answerHistory.splice(0,p.answerHistory.length-ANALYTICS_LIMIT);
+ persistProfiles();
+}
+function analyticsRecords(){
+ const p=currentAnalyticsProfile();if(!p)return[];
+ const days=$('analyticsPeriod')?.value||'30',filter=$('analyticsTopic')?.value||'all';
+ const since=days==='all'?0:Date.now()-Number(days)*86400000;
+ return (p.answerHistory||[]).filter(x=>x.time>=since&&(filter==='all'||x.mode===filter));
+}
+function el(tag,cls,txt){const x=document.createElement(tag);if(cls)x.className=cls;if(txt!==undefined)x.textContent=String(txt);return x}
+function analyticsEmpty(parent,msg){parent.append(el('div','analytics-empty',msg))}
+function renderAnalytics(){
+ const p=currentAnalyticsProfile();const summary=$('analyticsSummary'),topics=$('analyticsTopics'),mistakes=$('analyticsMistakes'),sessions=$('analyticsSessions');
+ if(!summary)return;[summary,topics,mistakes,sessions].forEach(x=>x.replaceChildren());
+ if(!p){analyticsEmpty(summary,'הזינו שם ילד כדי לראות נתונים.');return}
+ const records=analyticsRecords(),correct=records.filter(x=>x.ok).length,wrong=records.filter(x=>!x.ok).length;
+ const allSessions=[...new Set(records.map(x=>x.session))];
+ for(const [value,label] of [[records.length,'תשובות שתועדו'],[records.length?Math.round(correct/records.length*100)+'%':'—','דיוק בתשובות'],[wrong,'תשובות שגויות'],[allSessions.length,'מפגשי תרגול']]){
+  const card=el('div','analytics-kpi');card.append(el('strong','',value),el('span','',label));summary.append(card)
+ }
+ const byTopic=new Map();for(const r of records){if(!byTopic.has(r.mode))byTopic.set(r.mode,[]);byTopic.get(r.mode).push(r)}
+ if(!byTopic.size)analyticsEmpty(topics,'עדיין אין תרגולים מתועדים בתקופה שבחרת.');
+ for(const [key,arr] of byTopic){const ok=arr.filter(x=>x.ok).length,percent=Math.round(ok/arr.length*100);const card=el('div','analytics-topic');const head=el('div','analytics-topic-head');head.append(el('span','',modes[key]||key),el('span','',`${ok}/${arr.length} · ${percent}%`));const track=el('div','analytics-track');const fill=el('div');fill.style.width=percent+'%';track.append(fill);card.append(head,track);topics.append(card)}
+ const wrongs=records.filter(x=>!x.ok).slice(-30).reverse();
+ if(!wrongs.length)analyticsEmpty(mistakes,records.length?'אין טעויות מתועדות בתקופה שבחרת.':'כאן יופיעו טעויות לאחר התרגול.');
+ wrongs.slice(0,15).forEach(r=>{const item=el('div','analytics-entry');item.append(el('strong','',`${modes[r.mode]||r.mode} · ${new Date(r.time).toLocaleDateString('he-IL')}`),el('div','',r.prompt),el('div','',`בחירת הילד: ${r.chosen||'לא נבחר'}`),el('div','',`התשובה הנכונה: ${r.expected||'לא ידועה'}`));if(r.detail)item.append(el('div','analytics-muted',r.detail));mistakes.append(item)});
+ const grouped=new Map();for(const r of records){if(!grouped.has(r.session))grouped.set(r.session,[]);grouped.get(r.session).push(r)}
+ if(!grouped.size)analyticsEmpty(sessions,'כאן יופיעו המפגשים האחרונים.');
+ [...grouped.values()].sort((a,b)=>b[0].time-a[0].time).slice(0,12).forEach(arr=>{const ok=arr.filter(x=>x.ok).length;const first=arr[0];const item=el('div','analytics-entry');item.append(el('strong','',`${new Date(first.time).toLocaleString('he-IL')} · ${modes[first.mode]||first.mode}`),el('div','',`${arr.length} שאלות · ${ok} נכונות · ${arr.length-ok} טעויות`));sessions.append(item)});
+}
+const topicSelect=$('analyticsTopic');for(const [key,title] of Object.entries(modes)){const option=document.createElement('option');option.value=key;option.textContent=title;topicSelect.append(option)}
+$('analyticsTopic').onchange=renderAnalytics;$('analyticsPeriod').onchange=renderAnalytics;
+const oldShowAdultAnalytics=showAdult;showAdult=function(){oldShowAdultAnalytics();renderAnalytics()};$('adultOpen').onclick=showAdult;
+const originalStartAnalytics=start;start=function(m){beginAnalyticsSession();originalStartAnalytics(m)};
+const originalResumeAnalytics=resumeProgress;resumeProgress=function(){beginAnalyticsSession();originalResumeAnalytics()};$('resumeChild').onclick=resumeProgress;
+const originalChooseAnalytics=choose;choose=function(value,button){if(locked)return;const q=question;recordAnswer(value===q.correct,answerLabel(q,value),answerLabel(q,q.correct),'choice');originalChooseAnalytics(value,button)};
+const originalCompleteAnalytics=completeSpecial;completeSpecial=function(ok=true){if(locked)return;let expected='',chosen='',detail='';
+ if(mode==='build'){const w=buildWords[round%buildWords.length];expected=w.word;chosen=(specialState?.placed||[]).map(x=>x.letter).join('');detail='הרכבת מילה'}
+ else if(mode==='match'){expected='התאמת סימן ניקוד';chosen=ok?'התאמה נכונה':'התאמה שגויה'}
+ else if(mode==='memory'){expected='ארבעה זוגות';chosen=ok?'נמצאו כל הזוגות':'לא הושלם'}
+ recordAnswer(ok,chosen,expected,mode,detail);originalCompleteAnalytics(ok)};
+// Count incorrect attempts in interactive tasks even if the child eventually succeeds.
+const oldRecordBuild=recordAnswer;
+function recordPracticeError(chosen,expected,detail){recordAnswer(false,chosen,expected,mode,detail)}
+
+
+// Topic locks: local parental convenience control, not a security boundary.
+const LOCK_STORE='kita_alef_topic_locks_v1',PIN_STORE='kita_alef_parent_pin_v1';
+function getPin(){try{return localStorage.getItem(PIN_STORE)||'1982'}catch(e){return '1982'}}
+function lockedTopics(){try{return JSON.parse(localStorage.getItem(LOCK_STORE)||'null')||Object.fromEntries(Object.keys(modes).map(k=>[k,true]))}catch(e){return Object.fromEntries(Object.keys(modes).map(k=>[k,true]))}}
+function saveLocks(locks){try{localStorage.setItem(LOCK_STORE,JSON.stringify(locks))}catch(e){}}
+function updateLockUI(){const locks=lockedTopics();document.querySelectorAll('.tile[data-mode]').forEach(tile=>{const isLocked=locks[tile.dataset.mode]!==false;tile.classList.toggle('locked-topic',isLocked);let badge=tile.querySelector('.lock-badge');if(!badge){badge=document.createElement('span');badge.className='lock-badge';tile.append(badge)}badge.textContent=isLocked?'🔒':'🔓'});const box=$('lockTopicRows');box.replaceChildren();Object.keys(modes).forEach(k=>{const row=el('div','lock-row');const title=el('span','',modes[k]);const b=el('button','',locks[k]===false?'🔓 פתוח · נעל':'🔒 נעול · שחרר');b.type='button';b.onclick=()=>{const pin=window.prompt('הקלידו את קוד ההורה');if(pin===null)return;if(pin!==getPin()){$('lockMessage').textContent='קוד שגוי';return}const current=lockedTopics();current[k]=current[k]===false;saveLocks(current);updateLockUI();$('lockMessage').textContent='ההגדרה נשמרה'};row.append(title,b);box.append(row)})}
+$('changeParentPin').onclick=()=>{const old=window.prompt('הקלידו את הקוד הנוכחי');if(old===null)return;if(old!==getPin()){$('lockMessage').textContent='הקוד הנוכחי שגוי';return}const pin=$('newParentPin').value.trim();if(!/^\d{4,8}$/.test(pin)){$('lockMessage').textContent='בחרו 4 עד 8 ספרות';return}try{localStorage.setItem(PIN_STORE,pin)}catch(e){}$('newParentPin').value='';$('lockMessage').textContent='הקוד עודכן'};
+const originalOpenLessonGate=openLesson;openLesson=function(m){if(lockedTopics()[m]!==false){const pin=window.prompt('🔒 נושא נעול. הקלידו את קוד ההורה לפתיחה');if(pin===null)return;if(pin!==getPin()){speak('הקוד אינו נכון.');return}const l=lockedTopics();l[m]=false;saveLocks(l);updateLockUI()}originalOpenLessonGate(m)};
+const originalStartGate=start;start=function(m){if(lockedTopics()[m]!==false){const pin=window.prompt('הקלידו קוד הורה');if(pin!==getPin())return;const l=lockedTopics();l[m]=false;saveLocks(l);updateLockUI()}originalStartGate(m)};
+updateLockUI();
+// Child self-rating: after an answer, before proceeding; stored alongside the answer.
+let lastRatedId=null;
+function showDifficulty(){const box=$('difficultyCheck');box.classList.add('visible');box.querySelectorAll('button').forEach(b=>b.classList.remove('selected'));lastRatedId=profile()?.answerHistory?.at(-1)?.id||null}
+function hideDifficulty(){$('difficultyCheck').classList.remove('visible');lastRatedId=null}
+$('difficultyCheck').querySelectorAll('button').forEach(btn=>btn.onclick=()=>{const rating=btn.dataset.difficulty;const p=currentAnalyticsProfile();if(p){let rec=(p.answerHistory||[]).find(x=>x.id===lastRatedId);if(rec){rec.difficulty=rating;persistProfiles()}}$('difficultyCheck').querySelectorAll('button').forEach(x=>x.classList.toggle('selected',x===btn));speak(rating==='easy'?'יופי!':rating==='medium'?'תודה ששיתפת.':'תודה שסיפרת. נמשיך ללמוד ביחד.')});
+const oldChooseDifficulty=choose;choose=function(v,b){if(locked)return;oldChooseDifficulty(v,b);showDifficulty()};
+const oldNextDifficulty=next;next=function(){hideDifficulty();oldNextDifficulty()};$('next').onclick=next;
+const oldRenderQuestionDifficulty=renderQuestion;renderQuestion=function(){hideDifficulty();oldRenderQuestionDifficulty()};
+const oldRenderAnalyticsDifficulty=renderAnalytics;renderAnalytics=function(){oldRenderAnalyticsDifficulty();const container=$('analyticsDifficulty');container.replaceChildren();const rows=analyticsRecords().filter(x=>x.difficulty);if(!rows.length){analyticsEmpty(container,'לא נאספו עדיין דירוגי קושי.');return}const counts={easy:0,medium:0,hard:0};rows.forEach(x=>counts[x.difficulty]=(counts[x.difficulty]||0)+1);container.append(el('div','analytics-entry',`😊 קל: ${counts.easy} · 🙂 קצת קשה: ${counts.medium} · 😓 קשה: ${counts.hard}`));const hard=rows.filter(x=>x.difficulty==='hard').slice(-8).reverse();hard.forEach(r=>container.append(el('div','analytics-entry',`${modes[r.mode]||r.mode}: ${r.prompt} — דורג כקשה`)))};
+// Clearer answer visuals and stable pronunciation controls.
+function decorateAnswers(){document.querySelectorAll('#options .answer-card').forEach(row=>{const b=row.querySelector('.option');if(!b||b.querySelector('.answer-illustration'))return;const value=b.dataset.value||'';let icon='';if(/^\d+$/.test(value))icon='🔢';else if(/^(CAT|DOG|SUN|BOOK|APPLE|HOUSE|TREE|CAR|[A-Z])$/.test(value))icon='🔤';else if(/^(יוֹם|יום)/.test(value))icon='📅';else if(/^[0-9]{1,2}:[0-9]{2}$/.test(value))icon='🕒';else if(mode==='clock')icon='🕒';else if(mode==='categories')icon='🧩';if(icon){const art=el('span','answer-illustration',icon);art.setAttribute('aria-hidden','true');b.prepend(art)}row.querySelector('.answer-audio').textContent='◖))'})}
+const oldRenderAnswers=renderQuestion;renderQuestion=function(){oldRenderAnswers();decorateAnswers()};
+const oldLessonSlideFinal=lessonSlide;lessonSlide=function(){oldLessonSlideFinal();const v=$('lessonArt').querySelector('.vowel-demo span');if(v)v.classList.add('vowel-glyph')};
+// More readable niqqud in question illustrations.
+const oldRenderVisualFinal=renderVisual;renderVisual=function(q){oldRenderVisualFinal(q);if(q.visual==='vowel'){$('visual').querySelector('.big')?.classList.add('vowel-glyph')}};
+// English voice for English-only phrases when a matching voice exists.
+const oldSpeakLanguage=speak;speak=function(t,refresh=true){if(mode==='englishWords'||mode==='englishLetters'||lessonMode==='englishWords'||lessonMode==='englishLetters'){if(/^[A-Z ]+[.!?]?$/.test(String(t).trim())){if(refresh)showSpeech(t);if(!soundOn||!window.speechSynthesis)return;stopSpeech();const u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=.8;speechSynthesis.speak(u);return}}oldSpeakLanguage(t,refresh)};
+
+// Age-appropriate learning path: meaningful clock stages, and a simple learn/practice choice elsewhere.
+const CLOCK_STAGES=[{name:'מכירים את השעון',hint:'מחוג קצר, מחוג ארוך, שעה עגולה וסיבוב מלא',from:0,to:3},{name:'קוראים דקות',hint:'קפיצות של חמש, רבע, חצי ורבע לשעה הבאה',from:4,to:9},{name:'מתקדמים בשעון',hint:'שעון דיגיטלי, בוקר וערב ותנועת המחוגים',from:10,to:17}];
+let selectedClockStage=0;
+const pathOverlay=document.createElement('div');pathOverlay.className='learning-path';pathOverlay.hidden=true;pathOverlay.setAttribute('role','dialog');pathOverlay.setAttribute('aria-modal','true');pathOverlay.innerHTML='<div class="path-panel"><button type="button" class="path-close">✕ סגירה</button><h2 id="pathTitle"></h2><p id="pathIntro"></p><div class="path-cards"></div></div>';
+document.body.append(pathOverlay);
+pathOverlay.querySelector('.path-close').onclick=()=>pathOverlay.hidden=true;
+pathOverlay.onclick=e=>{if(e.target===pathOverlay)pathOverlay.hidden=true};
+const priorOpenPath=openLesson;
+openLesson=function(m){
+ if(!childName){priorOpenPath(m);return}
+ const choices=pathOverlay.querySelector('.path-cards');choices.replaceChildren();
+ pathOverlay.querySelector('#pathTitle').textContent=modes[m];
+ pathOverlay.querySelector('#pathIntro').textContent=m==='clock'?'בוחרים שלב קצר. אפשר לחזור לכל שלב מתי שרוצים.':'אפשר להתחיל בלמידה או לעבור לתרגול. מומלץ ללמוד לפני שמתרגלים.';
+ const add=(name,detail,fn)=>{const b=document.createElement('button');b.className='path-choice';const title=document.createElement('strong');title.textContent=name;const sub=document.createElement('small');sub.textContent=detail;b.append(title,sub);b.onclick=()=>{pathOverlay.hidden=true;fn()};choices.append(b)};
+ if(m==='clock')CLOCK_STAGES.forEach((st,i)=>add(`${i+1}. ${st.name}`,st.hint,()=>{selectedClockStage=i;priorOpenPath(m);if(lessonMode===m){lessonIndex=st.from;lessonSlide()}}));
+ else add('📖 לומדים','שקופיות קצרות, איורים והקראה',()=>priorOpenPath(m));
+ add('🎯 מתרגלים',m==='clock'?'תרגול בהתאם לשלב השעון שנבחר':'שאלות ומשחקים בנושא',()=>{if(m==='clock')selectedClockStage=Math.min(2,selectedClockStage);start(m)});
+ pathOverlay.hidden=false;
+};
+// Respect the selected clock stage in lessons and exercises.
+const prevClockSlide=lessonSlide;
+lessonSlide=function(){prevClockSlide();if(lessonMode!=='clock')return;const st=CLOCK_STAGES[selectedClockStage];
+ $('lessonPrev').disabled=lessonIndex<=st.from;
+ $('lessonNext').textContent=lessonIndex>=st.to?'🎯 לַתִּרְגּוּל':'הַבָּא ⬅';
+ $('lessonFill').style.width=((lessonIndex-st.from+1)/(st.to-st.from+1)*100)+'%';
+ $('lessonDots').textContent=`שלב ${selectedClockStage+1} מתוך 3 · שקופית ${lessonIndex-st.from+1} מתוך ${st.to-st.from+1}`;
+ const art=$('lessonArt');const note=document.createElement('div');note.className='clock-stage';note.textContent=st.name;art.prepend(note);
+ const actions=document.createElement('div');actions.className='clock-scene-actions';
+ const replay=document.createElement('button');replay.type='button';replay.textContent='↻ סיבוב המחוגים';replay.onclick=()=>animateLessonClock(replay);actions.append(replay);
+ const hint=document.createElement('div');hint.className='clock-explain';hint.textContent='נסו להפעיל את המחוגים ולראות איך הם מתקדמים יחד.';art.append(actions,hint);
+};
+const prevNextClock=$('lessonNext').onclick;
+$('lessonNext').onclick=()=>{if(lessonMode==='clock'&&lessonIndex>=CLOCK_STAGES[selectedClockStage].to){beginGame();return}prevNextClock()};
+const prevClockQuestion=makeClockQuestion;
+makeClockQuestion=function(){if(mode!=='clock')return prevClockQuestion();const stage=selectedClockStage;const ranges=[[0,0,0,0,0,0,0,0],[0,1,2,3,4,5,6,1],[1,2,3,4,5,6,7,7]];const oldRound=round;round=ranges[stage][oldRound%8];const q=prevClockQuestion();round=oldRound;return q};
+// Resume a clock lesson in the matching stage, without jumping to unrelated slides.
+const prevResumeClock=resumeProgress;
+resumeProgress=function(){const c=childName&&profile().current;if(c?.mode==='clock'&&c.stage==='lesson'){const idx=c.lessonIndex||0;selectedClockStage=CLOCK_STAGES.findIndex(x=>idx>=x.from&&idx<=x.to);if(selectedClockStage<0)selectedClockStage=0}prevResumeClock()};
+$('resumeChild').onclick=resumeProgress;
+</script></body></html>
